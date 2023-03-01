@@ -1,0 +1,233 @@
+.nav-bar {
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#nav {
+  width: 100%;
+  height: 60px;
+  background-color: #222222;
+}
+#nav .nav-right-icon {
+  text-decoration: none;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  height: 60px;
+  justify-content: flex-end;
+}
+#nav .nav-right-icon a {
+  text-decoration: none;
+}
+#nav .nav-right-icon a i {
+  font-size: 17px;
+  text-decoration: none;
+  color: #C3C3C3;
+}
+#nav .nav-right-icon a span {
+  text-decoration: none;
+  color: #C3C3C3;
+  font-size: 14px;
+}
+#nav .flag .divider {
+  margin: 1px !important;
+}
+#nav .flag .ui {
+  background-color: #222222 !important;
+  color: white;
+}
+#nav .flag .ui .search {
+  background-color: #222222 !important;
+}
+#nav .flag .ui .search .selection .dropdown {
+  background-color: #222222 !important;
+}
+
+#nav-down {
+  background-color: #EF6C00;
+  width: 100%;
+  height: 80px;
+}
+#nav-down .Sophia {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+#nav-down .Sophia a {
+  text-decoration: none;
+}
+#nav-down .Sophia a h1 {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#nav-down .serach {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+#nav-down .serach input {
+  height: 35px;
+  width: 29rem;
+}
+#nav-down .serach button {
+  height: 35px !important;
+  width: 7rem;
+  border-radius: 2px !important;
+}
+#nav-down .call-contact {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+}
+#nav-down .call-contact i {
+  text-decoration: none;
+  color: white;
+}
+#nav-down .call-contact .call-icon {
+  font-size: 32px;
+}
+#nav-down .call-contact .call-helpline span {
+  color: white;
+  font-size: 13px;
+}
+#nav-down .call-contact .call-number {
+  color: white;
+  font-size: 18px;
+}
+#nav-down .call-contact .basket-number {
+  display: flex;
+}
+#nav-down .call-contact .basket-number i {
+  font-size: 18px;
+}
+#nav-down .call-contact .basket-number .sup-number {
+  height: 15px;
+  width: 15px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  top: -8px;
+  right: 7px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+#nav-down .call-contact .basket-number .sup-number sup {
+  color: white;
+  position: relative;
+  top: 7px;
+  left: 4;
+  font-size: 10px;
+}
+
+/* slider */
+
+#slideshow { 
+  margin: 0 auto; 
+  position: relative; 
+  width: 100%;
+  padding: 1% 1% 45% 1%; /*56.25 is for 16x9 resolution*/
+  /* border-radius:20px; */
+  /* background: rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px rgba(0,0,0,0.6); */
+box-sizing:border-box;
+}
+
+#slideshow > div { 
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+  right: 10px; 
+  bottom: 10px; 
+}
+
+#slideshow > div > img {
+width:100%;
+height:100%;
+/* border-radius:20px; */
+}
+
+#slideshow:hover i, #slideshow:hover .slider-dots{
+opacity: 1;
+}
+
+.slidebtn {
+z-index:99;
+background:transparent;
+outline:none;
+border:none;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+transition: all 0.3s;
+
+}
+
+.slidebtn:active,
+.slidedtn:focus {
+outline:none;}
+
+.slidebtn i {
+color:#FFF;
+font-size:72px;
+opacity: 0.2;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+transition: all 0.3s;
+
+}
+
+.prev {
+  position: absolute; 
+  top: 10px; 
+  left: 10px; 
+  bottom: 10px;
+}
+
+.next {
+  position: absolute; 
+  top: 10px; 
+  right: 10px; 
+  bottom: 10px;
+}
+
+
+.slider-dots {
+opacity: 0.2;
+list-style: none;
+display: inline-block;
+padding-left: 0;
+margin-bottom: 0;
+position:absolute;
+left:50%;
+bottom:3%;
+transform: translate(-50%, 0);
+z-index:99;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+transition: all 0.3s;
+
+}
+
+.slider-dots li {
+color: #000;
+display: inline;
+font-size: 48px;
+margin-right: 5px;
+cursor:pointer;
+}
+
+.slider-dots li.active-dot {
+color: #fff;
+}
+
+
+#nav-down .call-contact .basket-number span {
+  color: white;
+}/*# sourceMappingURL=home.css.map */
