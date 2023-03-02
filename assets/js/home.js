@@ -49,7 +49,7 @@ $(document).ready(function () {
 
 
   var swiper = new Swiper(".mySwiper", {
-    loop:true,
+    loop: true,
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
@@ -60,11 +60,33 @@ $(document).ready(function () {
       el: ".swiper-pagination",
       clickable: true,
     },
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev",
+    // },
+
+  });
+
+
+  //card carusel
+
+  var swiper = new Swiper(".mySwipers", {
+    slidesPerView: 4,
+    spaceBetween: 30,
+    centeredSlides: true,
+    pagination: {
+      el: ".swiper-paginations",
+      clickable: true,
+    },
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+
+
+
   });
+  
 
 
 
