@@ -111,7 +111,8 @@
 
     }
 
-    .serach {
+    .search {
+
         height: 80px;
         display: flex;
         align-items: center;
@@ -120,6 +121,9 @@
         input {
             height: 35px;
             width: 29rem;
+            border-top-left-radius: 3px !important;
+            border-bottom-left-radius: 3px;
+            padding-left: 10px;
         }
 
         button {
@@ -989,7 +993,8 @@ body {
   color: $color-blue-gray;
 }
 
-.main {
+#card-prodacts-carousel {
+
   .tab {
     width: 100%;
     height: auto;
@@ -1066,6 +1071,56 @@ body {
 }
 
 
+
+#info-prodact-main{
+
+
+    .laptop-info{
+
+        padding-top: 20px;
+        padding-left: 20px ;
+
+        background-color: aqua;
+
+        h4{
+            
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        a{
+            text-decoration: none;
+            h5{
+                font-weight: bold;
+                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                color: black;
+            }
+        }
+
+        .images-laptop{
+
+             
+            img{
+              
+                margin-left: 156px;
+                height: 340px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: 70%;
+                border-radius: 4px;
+                background-color: #EF6C00;
+                
+                
+            }
+        }
+        
+
+       
+
+
+    }
+
+}
 
 
 

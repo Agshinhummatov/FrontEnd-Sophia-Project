@@ -65,16 +65,19 @@
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-#nav-down .serach {
+#nav-down .search {
   height: 80px;
   display: flex;
   align-items: center;
 }
-#nav-down .serach input {
+#nav-down .search input {
   height: 35px;
   width: 29rem;
+  border-top-left-radius: 3px !important;
+  border-bottom-left-radius: 3px;
+  padding-left: 10px;
 }
-#nav-down .serach button {
+#nav-down .search button {
   height: 35px !important;
   width: 7rem;
   border-radius: 2px !important;
@@ -500,15 +503,15 @@ body {
   color: #9194a1;
 }
 
-.main .tab {
+#card-prodacts-carousel .tab {
   width: 100%;
   height: auto;
   padding: 3rem 0;
 }
-.main .tab .tab-menu-link {
+#card-prodacts-carousel .tab .tab-menu-link {
   width: 14.5% !important;
 }
-.main .tab-menu {
+#card-prodacts-carousel .tab-menu {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -518,7 +521,7 @@ body {
   border-bottom: 1.3px solid #dbdbdb;
   transition: all 0.3s ease;
 }
-.main .tab-menu-link {
+#card-prodacts-carousel .tab-menu-link {
   position: relative;
   overflow: hidden;
   font-family: inherit;
@@ -534,7 +537,7 @@ body {
   background: #ffffff;
   transition: all 0.3s ease;
 }
-.main .tab-menu-link::before {
+#card-prodacts-carousel .tab-menu-link::before {
   position: absolute;
   content: "";
   top: 0;
@@ -543,7 +546,7 @@ body {
   height: auto;
   z-index: 2;
 }
-.main .tab-menu-link.is-active {
+#card-prodacts-carousel .tab-menu-link.is-active {
   bottom: 0px;
   z-index: 0;
   overflow: hidden;
@@ -551,17 +554,44 @@ body {
   color: #252b46;
   background: #ffffff;
 }
-.main .tab-bar {
+#card-prodacts-carousel .tab-bar {
   padding: 2.5rem 0;
   overflow: hidden;
   background: #ffffff;
 }
-.main .tab-bar-content {
+#card-prodacts-carousel .tab-bar-content {
   display: none;
   width: 100%;
   min-height: 10rem;
   transition: all 0.3s ease;
 }
-.main .tab-bar-content.is-active {
+#card-prodacts-carousel .tab-bar-content.is-active {
   display: block;
+}
+
+#info-prodact-main .laptop-info {
+  padding-top: 20px;
+  padding-left: 20px;
+  background-color: aqua;
+}
+#info-prodact-main .laptop-info h4 {
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#info-prodact-main .laptop-info a {
+  text-decoration: none;
+}
+#info-prodact-main .laptop-info a h5 {
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: black;
+}
+#info-prodact-main .laptop-info .images-laptop img {
+  margin-left: 156px;
+  height: 340px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 70%;
+  border-radius: 4px;
+  background-color: #EF6C00;
 }/*# sourceMappingURL=home.css.map */

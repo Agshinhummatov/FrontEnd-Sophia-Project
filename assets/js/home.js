@@ -110,7 +110,8 @@ $(document).ready(function () {
     
   //   iconWishlist.addEventListener("mouseleave",function(){
 
-  //     let icons = document.querySelector(".icon-wishlist")
+  //     let icons = document.querySelector("#card .mySwipers .swipers  .swiper-slide .card-prodact .icon-wishlist ")
+
 
   //     icons.classList.add("d-none")
       
@@ -121,7 +122,8 @@ $(document).ready(function () {
   // });
    
 
-  ///
+
+  /// tab menu carusel
 
 
   const tabLink = document.querySelectorAll(".tab-menu-link");
