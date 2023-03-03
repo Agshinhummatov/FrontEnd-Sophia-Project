@@ -71,7 +71,7 @@ $(document).ready(function () {
   //card carusel
 
   var swiper = new Swiper(".mySwipers", {
-    slidesPerView: 3,
+    slidesPerView: 4,
     spaceBetween: 30,
     centeredSlides: true,
     pagination: {
@@ -86,7 +86,69 @@ $(document).ready(function () {
 
 
   });
+
+
+  //gozu legv edir duzeldecem
+
+  // let iconsWishlist = document.querySelectorAll("#card .swiper-slide");
   
+  // iconsWishlist.forEach(iconWishlist => {
+    
+  //   iconWishlist.addEventListener("mouseover",function(){
+
+  //     let icons = document.querySelector(".icon-wishlist")
+
+  //     icons.classList.remove("d-none")
+
+
+
+  //   })
+
+  // });
+
+  // iconsWishlist.forEach(iconWishlist => {
+    
+  //   iconWishlist.addEventListener("mouseleave",function(){
+
+  //     let icons = document.querySelector(".icon-wishlist")
+
+  //     icons.classList.add("d-none")
+      
+
+
+  //   })
+
+  // });
+   
+
+  ///
+
+
+  const tabLink = document.querySelectorAll(".tab-menu-link");
+const tabContent = document.querySelectorAll(".tab-bar-content");
+
+tabLink.forEach((item) => {
+  item.addEventListener("click", activeTab);
+});
+
+function activeTab(item) {
+  const btnTarget = item.currentTarget;
+  const content = btnTarget.dataset.content;
+
+  tabContent.forEach((item) => {
+    item.classList.remove("is-active");
+  });
+
+  tabLink.forEach((item) => {
+    item.classList.remove("is-active");
+  });
+
+  document.querySelector("#" + content).classList.add("is-active");
+  btnTarget.classList.add("is-active");
+}
+
+
+
 
 
 
@@ -94,10 +156,6 @@ $(document).ready(function () {
 
 
 });
-
-
-
-
 
 
 
