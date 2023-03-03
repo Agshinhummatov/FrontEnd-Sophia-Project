@@ -71,7 +71,7 @@ $(document).ready(function () {
   //card carusel
 
   var swiper = new Swiper(".mySwipers", {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 30,
     centeredSlides: true,
     pagination: {
