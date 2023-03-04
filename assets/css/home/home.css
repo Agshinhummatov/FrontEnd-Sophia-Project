@@ -326,7 +326,7 @@ body {
   font-weight: bold;
 }
 #card .swipers {
-  margin-left: -425px;
+  margin-left: -360px;
 }
 #card .swiper-paginations span {
   background-color: white;
@@ -594,4 +594,52 @@ body {
   background-position: 70%;
   border-radius: 4px;
   background-color: #EF6C00;
+}
+
+#prodact-star .info-prodacts-star ._line {
+  margin-top: 5px;
+  display: flex;
+  margin-bottom: 18px;
+}
+#prodact-star .info-prodacts-star ._line ._line-black {
+  height: 2px;
+  width: 38px;
+  background-color: black;
+}
+#prodact-star .info-prodacts-star ._line ._line-gray {
+  height: 2px;
+  width: 287px;
+  background-color: rgba(160, 157, 157, 0.562);
+}
+#prodact-star .info-prodacts-star .info-prodacts-button {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+#prodact-star .info-prodacts-star .info-prodacts-button .featured-products-img a {
+  text-decoration: none;
+}
+#prodact-star .info-prodacts-star .info-prodacts-button .featured-products-img a img {
+  width: 86px;
+  height: 86px;
+  background-color: rgb(202, 201, 201);
+}
+#prodact-star .info-prodacts-star .info-prodacts-button .star-icon {
+  padding-top: 10px;
+}
+#prodact-star .info-prodacts-star .info-prodacts-button .star-icon .info-prodact-text a {
+  text-decoration: none;
+}
+#prodact-star .info-prodacts-star .info-prodacts-button .star-icon .info-prodact-text a span {
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#prodact-star .info-prodacts-star .info-prodacts-button .star-icon i {
+  color: goldenrod;
+}
+#prodact-star .info-prodacts-star .info-prodacts-button .star-icon h6 {
+  padding-top: 5px;
+  font-size: 15px;
 }/*# sourceMappingURL=home.css.map */

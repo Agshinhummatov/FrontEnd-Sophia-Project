@@ -91,9 +91,9 @@ $(document).ready(function () {
   //gozu legv edir duzeldecem
 
   // let iconsWishlist = document.querySelectorAll("#card .swiper-slide");
-  
+
   // iconsWishlist.forEach(iconWishlist => {
-    
+
   //   iconWishlist.addEventListener("mouseover",function(){
 
   //     let icons = document.querySelector(".icon-wishlist")
@@ -107,47 +107,47 @@ $(document).ready(function () {
   // });
 
   // iconsWishlist.forEach(iconWishlist => {
-    
+
   //   iconWishlist.addEventListener("mouseleave",function(){
 
   //     let icons = document.querySelector("#card .mySwipers .swipers  .swiper-slide .card-prodact .icon-wishlist ")
 
 
   //     icons.classList.add("d-none")
-      
+
 
 
   //   })
 
   // });
-   
+
 
 
   /// tab menu carusel
 
 
   const tabLink = document.querySelectorAll(".tab-menu-link");
-const tabContent = document.querySelectorAll(".tab-bar-content");
-
-tabLink.forEach((item) => {
-  item.addEventListener("click", activeTab);
-});
-
-function activeTab(item) {
-  const btnTarget = item.currentTarget;
-  const content = btnTarget.dataset.content;
-
-  tabContent.forEach((item) => {
-    item.classList.remove("is-active");
-  });
+  const tabContent = document.querySelectorAll(".tab-bar-content");
 
   tabLink.forEach((item) => {
-    item.classList.remove("is-active");
+    item.addEventListener("click", activeTab);
   });
 
-  document.querySelector("#" + content).classList.add("is-active");
-  btnTarget.classList.add("is-active");
-}
+  function activeTab(item) {
+    const btnTarget = item.currentTarget;
+    const content = btnTarget.dataset.content;
+
+    tabContent.forEach((item) => {
+      item.classList.remove("is-active");
+    });
+
+    tabLink.forEach((item) => {
+      item.classList.remove("is-active");
+    });
+
+    document.querySelector("#" + content).classList.add("is-active");
+    btnTarget.classList.add("is-active");
+  }
 
 
 
