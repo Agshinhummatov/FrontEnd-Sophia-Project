@@ -232,134 +232,6 @@
 //slider
 
 
-// #slideshow {
-//     margin: 0 auto;
-//     position: relative;
-//     width: 100%;
-//     padding: 1% 1% 45% 1%;
-//     // border-radius: 20px;
-//     // background: rgba(0, 0, 0, 0.2);
-//     // box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
-//     box-sizing: border-box;
-//     position: relative;
-
-//     .slideitem {
-
-//         h1 {
-//             position: absolute;
-//             top: 32%;
-//             left: 10%;
-//             font-weight: 700;
-//             font-size: 48px;
-
-//         }
-
-//         h3 {
-//             position: absolute;
-//             top: 43%;
-//             left: 10%;
-//         }
-
-//         button {
-//             position: absolute;
-//             top: 50%;
-//             left: 10%;
-
-//             width: 150px;
-//             background-color: #EF6C00;
-
-
-//         }
-//     }
-
-//     &>div {
-//         position: absolute;
-//         top: 10px;
-//         left: 10px;
-//         right: 10px;
-//         bottom: 10px;
-
-//         &>img {
-//             width: 100%;
-//             height: 560px;
-//             // border-radius: 20px;
-//         }
-//     }
-// }
-
-// #slideshow:hover i,
-// #slideshow:hover .slider-dots {
-//     opacity: 1;
-// }
-
-// .slidebtn {
-//     z-index: 99;
-//     background: transparent;
-//     outline: none;
-//     border: none;
-//     -webkit-transition: all 0.3s;
-//     -moz-transition: all 0.3s;
-//     transition: all 0.3s;
-
-//     display: none;
-
-//     i {
-//         color: #FFF;
-//         font-size: 72px;
-//         opacity: 0.2;
-//         -webkit-transition: all 0.3s;
-//         -moz-transition: all 0.3s;
-//         transition: all 0.3s;
-//     }
-// }
-
-// .slidebtn:active,
-// .slidedtn:focus {
-//     outline: none;
-// }
-
-// .prev {
-//     position: absolute;
-//     top: 10px;
-//     left: 10px;
-//     bottom: 10px;
-// }
-
-// .next {
-//     position: absolute;
-//     top: 10px;
-//     right: 10px;
-//     bottom: 10px;
-// }
-
-// .slider-dots {
-//     opacity: 0.2;
-//     list-style: none;
-//     display: inline-block;
-//     padding-left: 0;
-//     margin-bottom: 0;
-//     position: absolute;
-//     left: 50%;
-//     bottom: 16%;
-//     transform: translate(-50%, 0);
-//     z-index: 99;
-//     -webkit-transition: all 0.3s;
-//     -moz-transition: all 0.3s;
-//     transition: all 0.3s;
-
-//     li {
-//         color: rgb(170, 170, 170);
-//         display: inline;
-//         font-size: 35px;
-//         margin-right: 5px;
-//         cursor: pointer;
-
-//         &.active-dot {
-//             color: #fff;
-//         }
-//     }
-// }
-
 
 
 
@@ -1099,15 +971,15 @@ body {
             }
         }
 
-       
+
 
 
         .images-laptop {
 
-            
-            
 
-          
+
+
+
 
             img {
 
@@ -1138,7 +1010,7 @@ body {
 
 #prodact-star {
 
-    .info-prodacts-star{
+    .info-prodacts-star {
 
 
 
@@ -1166,20 +1038,22 @@ body {
         .info-prodacts-button {
 
             display: flex;
-         
+
             gap: 20px;
             margin-top: 20px;
+
             .featured-products-img {
-               a{
-                text-decoration: none;
-                img {
-                    width: 86px;
-                    height: 86px;
-                    background-color: rgb(202, 201, 201);
+                a {
+                    text-decoration: none;
+
+                    img {
+                        width: 86px;
+                        height: 86px;
+                        background-color: #F5F5F5
+                    }
+
                 }
 
-               }
-                
 
             }
 
@@ -1189,10 +1063,10 @@ body {
 
                 .info-prodact-text {
 
-                    a{
+                    a {
                         text-decoration: none;
-                      
-                        span{
+
+                        span {
                             font-size: 15px;
                             color: black;
                             font-weight: bold;
@@ -1200,7 +1074,7 @@ body {
                         }
 
                     }
-                  
+
                 }
 
 
@@ -1228,3 +1102,9 @@ body {
 
 
 }
+
+
+
+
+
+
