@@ -68,7 +68,7 @@ $(document).ready(function () {
   //card carusel
 
   var swiper = new Swiper(".mySwipers", {
-    loop:true,
+    loop: true,
     slidesPerView: 4,
     spaceBetween: 30,
     centeredSlides: true,
@@ -161,37 +161,79 @@ $(document).ready(function () {
 
 
 
-// const modal = document.querySelector('.modal');
-// const modalContent = document.querySelector('.modal__content');
-// const close = document.querySelector('.modal__close');
-// const modalImg = document.querySelector('.modal__img');
-// const productList = document.querySelectorAll('.product__list');
-// const title = document.querySelector('.detail__title');
-// const cost = document.querySelector('.detail__price');
+let cardBtns = document.querySelectorAll("#card-prodacts-carousel .button");
 
-// const productCost = ['£395', '£245', '£195', '£295', '£345', '£455'];
 
-// productList.forEach((list, index) => {
-//   const view = list.querySelector('.product__viewBtn');
-//   const productImg = list.querySelector('.product__img').getAttribute('src');
+let products = [];
 
-//   view.addEventListener('click', () => {
-//     modal.classList.add('modal--bg');
-//     modalContent.classList.add('modal__content--show');
-//     modalImg.setAttribute('src', productImg);
-//     title.innerText = `product title ${index + 1}`;
-//     cost.innerText = productCost[index];
-//   });
-// });
+if (localStorage.getItem("basket") != null) {
+  products = JSON.parse(localStorage.getItem("basket"));
+}
 
-// close.addEventListener('click', () => {
-//   modal.classList.remove('modal--bg');
-//   modalContent.classList.remove('modal__content--show');
-// });
 
-// modal.addEventListener('click', () => {
-//   modal.classList.remove('modal--bg');
-//   modalContent.classList.remove('modal__content--show');
-// });
+
+
+
+cardBtns.forEach(btn => {
+  btn.addEventListener("click", function (e) {
+
+    e.preventDefault();
+    let prodoctImage = this.parentNode.parentNode.previousElementSibling.firstElementChild.firstElementChild.firstElementChild.getAttribute("src");
+
+
+
+    let productName = this.parentNode.parentNode.firstElementChild.lastElementChild.innerText;
+
+    // let productDesc = this.previousElementSibling.previousElementSibling.innerText;
+    let productPrice = parseInt(this.parentNode.previousElementSibling.previousElementSibling.innerText);
+
+    let productId = parseInt(this.parentNode.parentNode.parentNode.parentNode.getAttribute("data-id"));
+
+    let existProduct = products.find(m => m.id == productId);
+
+    if (existProduct != undefined) {
+      existProduct.count += 1;
+      existProduct.price = productPrice * existProduct.count;
+    } else {
+
+      products.push({
+        id: productId,                              // gotrduyum elementleri add edirem 
+        name: productName,
+        img: prodoctImage,
+        // descripation: productDesc,
+        price: productPrice,
+        count: 1
+
+      })
+    }
+
+
+
+
+
+
+    localStorage.setItem("basket", JSON.stringify(products));
+
+    getBasketCount(products);
+
+
+
+  })
+
+});
+
+
+function getBasketCount(arr){
+  let sum = 0;
+  for (const item of arr) {
+      sum += item.count
+  }
+ document.querySelector("sup").innerText = sum;
+}
+
+getBasketCount(products)
+
+
+
 
 

@@ -89,6 +89,7 @@
 
 
 
+
 #nav-down {
     background-color: #EF6C00;
     width: 100%;
@@ -653,11 +654,39 @@ body {
 
 
             .card-prodact {
+                
 
                 position: relative;
                 background-color: #fff;
                 width: 245px;
                 height: 352px;
+
+                &:hover{
+                       
+                    .cards{
+                        
+
+                        .icon-wishlist{
+                          
+                            display: block;
+                            a{
+                                i{
+                                    &:hover{
+                                        color: #EF6C00;
+                                    }
+                                }
+
+                            }
+
+                        }
+
+                    }
+
+                }
+                .cards{
+
+                    display: flex;
+                }
 
                 .img {
 
@@ -684,8 +713,8 @@ body {
 
                 .icon-wishlist {
 
-
-
+ 
+                     display: none;
                     a {
                         text-decoration: none;
                         position: absolute;

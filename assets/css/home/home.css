@@ -378,6 +378,15 @@ body {
   width: 245px;
   height: 352px;
 }
+#card .swiper-wrapper .swiper-slide .card-prodact:hover .cards .icon-wishlist {
+  display: block;
+}
+#card .swiper-wrapper .swiper-slide .card-prodact:hover .cards .icon-wishlist a i:hover {
+  color: #EF6C00;
+}
+#card .swiper-wrapper .swiper-slide .card-prodact .cards {
+  display: flex;
+}
 #card .swiper-wrapper .swiper-slide .card-prodact .img {
   width: 240px;
   height: 180px;
@@ -386,6 +395,9 @@ body {
   width: 180px;
   height: 180px;
   margin-left: 25px;
+}
+#card .swiper-wrapper .swiper-slide .card-prodact .icon-wishlist {
+  display: none;
 }
 #card .swiper-wrapper .swiper-slide .card-prodact .icon-wishlist a {
   text-decoration: none;
