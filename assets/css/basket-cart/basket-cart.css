@@ -1,0 +1,178 @@
+.nav-bar {
+  display: flex;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#nav {
+  width: 100%;
+  height: 60px;
+  background-color: #222222;
+}
+#nav .nav-right-icon {
+  text-decoration: none;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  height: 60px;
+  justify-content: flex-end;
+}
+#nav .nav-right-icon a {
+  text-decoration: none;
+}
+#nav .nav-right-icon a i {
+  font-size: 17px;
+  text-decoration: none;
+  color: #C3C3C3;
+}
+#nav .nav-right-icon a span {
+  text-decoration: none;
+  color: #C3C3C3;
+  font-size: 14px;
+}
+#nav .flag .divider {
+  margin: 1px !important;
+}
+#nav .flag .ui {
+  background-color: #222222 !important;
+  color: white;
+}
+#nav .flag .ui .search {
+  background-color: #222222 !important;
+}
+#nav .flag .ui .search .selection .dropdown {
+  background-color: #222222 !important;
+}
+
+#nav-down {
+  background-color: #EF6C00;
+  width: 100%;
+  height: 85px;
+}
+#nav-down .Sophia {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+#nav-down .Sophia a {
+  text-decoration: none;
+}
+#nav-down .Sophia a h1 {
+  color: white;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+#nav-down .search {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+#nav-down .search input {
+  height: 35px;
+  width: 29rem;
+  border-top-left-radius: 3px !important;
+  border-bottom-left-radius: 3px;
+  padding-left: 10px;
+}
+#nav-down .search button {
+  height: 35px !important;
+  width: 7rem;
+  border-radius: 2px !important;
+}
+#nav-down .call-contact {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: absolute;
+}
+#nav-down .call-contact i {
+  text-decoration: none;
+  color: white;
+}
+#nav-down .call-contact .call-icon {
+  font-size: 32px;
+}
+#nav-down .call-contact .call-helpline span {
+  color: white;
+  font-size: 13px;
+}
+#nav-down .call-contact .call-number {
+  color: white;
+  font-size: 18px;
+}
+#nav-down .call-contact .basket-number a {
+  text-decoration: none;
+  display: flex;
+}
+#nav-down .call-contact .basket-number a i {
+  font-size: 18px;
+}
+#nav-down .call-contact .basket-number a .sup-number {
+  height: 15px;
+  width: 15px;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  top: -8px;
+  right: 7px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+#nav-down .call-contact .basket-number a .sup-number sup {
+  color: white;
+  position: relative;
+  top: 7px;
+  left: 4;
+  font-size: 10px;
+}
+#nav-down .call-contact .basket-number a p {
+  color: white;
+  font-weight: bold;
+}
+
+#navbar-tabs {
+  background-color: #F3F3F3;
+}
+#navbar-tabs .navbar-page {
+  display: flex;
+  background-color: #F3F3F3 !important;
+}
+#navbar-tabs .nav-body {
+  background-color: #F3F3F3 !important;
+}
+#navbar-tabs .navbar-info {
+  background-color: #F3F3F3 !important;
+}
+#navbar-tabs .navbar-info .navbar-li li {
+  width: 100px !important;
+}
+#navbar-tabs .navbar-info .navbar-li li a {
+  font-size: 17px;
+  font-weight: bold;
+}
+#navbar-tabs .navbar-info .navbar-li li:hover {
+  background-color: #E9E9E9;
+}
+#navbar-tabs .navbar-info .navbar-li .page-list ul li a {
+  font-size: 15px !important;
+  font-weight: 400;
+}
+
+#basket-cart .info-basket {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+._line {
+  margin-top: 20px;
+  height: 1px;
+  width: 1143px;
+  background-color: #222222;
+}/*# sourceMappingURL=basket-cart.css.map */
