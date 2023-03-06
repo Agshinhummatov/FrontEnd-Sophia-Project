@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
 
-  //flag 
+  //flag
   $('.ui.dropdown')
     .dropdown();
 
@@ -45,7 +45,7 @@ $(document).ready(function () {
 
 
 
-  //silder 
+  //silder
 
 
   var swiper = new Swiper(".mySwiper", {
@@ -195,19 +195,19 @@ cardBtns.forEach(btn => {
 
     if (existProduct != undefined) {
       existProduct.count += 1;
-      existProduct.total +=existProduct.price
-     
+      // existProduct.total =existProduct.price * existProduct.count
+
     } else {
 
       products.push({
 
-        id: productId,                              // gotrduyum elementleri add edirem 
+        id: productId,                              // gotrduyum elementleri add edirem
         name: productName,
         img: prodoctImage,
-     
+
         price: productPrice,
         count: 1,
-        total: productPrice*1
+        // total: productPrice * 1
 
       })
     }
@@ -240,17 +240,32 @@ getBasketCount(products)
 
 
 
+
+
 function getBasketPrice(arr){
   let sum = 0;
   for (const item of arr) {
-      sum += item.total
+      sum += item.price*item.count
   }
 
   document.querySelector("._total-price").innerText =  "$" + sum +".00"
- 
+
 }
 
 getBasketPrice(products)
+
+
+// function getBasketPrice(arr){
+//   let sum = 0;
+//   for (const item of arr) {
+//       sum += item.price
+//   }
+
+//   document.querySelector("._total-price").innerText =  "$" + sum +".00"
+
+// }
+
+// getBasketPrice(products)
 
 
 

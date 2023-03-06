@@ -1,0 +1,137 @@
+#page-title {
+  padding: 20px 0;
+  border-bottom: 1px solid #f3f3f3;
+}
+#page-title .about-us h4 {
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+}
+#page-title .content {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+#page-title .content li {
+  list-style: none;
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+#page-title .content li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  font-size: 14px;
+}
+#page-title .content .about-us {
+  display: flex;
+}
+
+#about-us .about-us-intro h2 {
+  font-size: 36px;
+  text-transform: capitalize;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: #383838;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+#about-us .about-us-intro p {
+  line-height: 26px;
+}
+#about-us .accordions h4 {
+  font-size: 18px;
+  font-weight: 600;
+}
+#about-us .accordions .button-accordion {
+  height: 47px;
+}
+
+#services {
+  background-color: #f5f5f5;
+  height: 450px;
+}
+#services .title {
+  padding: 41px;
+}
+#services .title h2 {
+  font-size: 36px;
+  text-transform: capitalize;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: #383838;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#services .title p {
+  text-align: center;
+  color: #777;
+}
+#services .content {
+  background-color: white;
+  width: 410px;
+  height: 214px;
+}
+#services .content .icon {
+  padding-top: 47px;
+  margin-left: 19px;
+}
+#services .content .icon i {
+  font-size: 45px;
+  color: #EF6C00;
+}
+#services .content h4 {
+  font-weight: 600;
+  font-size: 22px;
+  margin-left: 25px;
+  margin-bottom: 6px;
+  line-height: 2;
+}
+#services .content p {
+  line-height: 26px;
+  margin-left: 25px;
+  color: #333;
+}
+
+#teams .title {
+  text-align: center;
+  margin-top: 50px;
+}
+#teams .title h2 {
+  margin-bottom: 10px;
+  font-size: 36px;
+  text-transform: capitalize;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: #383838;
+  font-weight: 700;
+}
+#teams .title p {
+  color: #777;
+  font-weight: 500;
+}
+#teams .team-members .single-team-member {
+  width: 295px;
+  height: 365.88;
+}
+#teams .team-members .single-team-member .img img {
+  width: 100%;
+}
+#teams .team-members .single-team-member .text {
+  border: 1px solid #f6f6f6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: 0.4s ease;
+  text-align: center;
+}
+#teams .team-members .single-team-member .text h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+#teams .team-members .single-team-member .text p {
+  margin: 0;
+  color: #333;
+}/*# sourceMappingURL=about.css.map */

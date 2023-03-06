@@ -180,7 +180,6 @@
 }
 #basket-cart .info-basket .total-price {
   display: flex;
-  justify-content: space-between;
 }
 #basket-cart .info-basket .total-price a {
   text-decoration: none;
