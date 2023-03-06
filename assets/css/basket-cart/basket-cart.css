@@ -165,9 +165,37 @@
 
 #basket-cart .info-basket {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  display: flex;
   margin-top: 20px;
-  justify-content: space-around;
+}
+#basket-cart .info-basket .table .table-body tr td {
+  font-weight: bold;
+}
+#basket-cart .info-basket .table .table-body tr td img {
+  width: 100px;
+  cursor: pointer;
+}
+#basket-cart .info-basket .table .table-body tr b {
+  color: #EF6C00;
+  font-weight: bold;
+}
+#basket-cart .info-basket .total-price {
+  display: flex;
+  justify-content: space-between;
+}
+#basket-cart .info-basket .total-price a {
+  text-decoration: none;
+}
+#basket-cart .info-basket .total-price a button {
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 190px !important;
+  height: 49px;
+  font-weight: bold;
+  color: white;
+  background-color: #EF6C00 !important;
+  border: 0px solid;
 }
 
 ._line {

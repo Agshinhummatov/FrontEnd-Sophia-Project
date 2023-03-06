@@ -311,22 +311,95 @@
     .info-basket {
         box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
 
-        display: flex;
+
         margin-top: 20px;
-        justify-content: space-around;
+
+
+
+        .table {
+
+            .table-body {
+
+
+
+
+                tr {
+
+                    td {
+
+                        font-weight: bold;
+
+                        img {
+                            width: 100px;
+                            cursor: pointer;
+                        }
+
+
+                    }
+
+                    b {
+
+                        color: #EF6C00;
+                        font-weight: bold;
+                    }
+
+
+                }
+
+
+
+
+
+
+
+            }
+
+
+
+
+        }
+
+
+        .total-price {
+
+            display: flex;
+           
+
+            a {
+
+                text-decoration: none;
+
+                button {
+                    border-top-right-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    border-top-left-radius: 5px;
+
+                    width: 190px !important;
+                    height: 49px;
+                    font-weight: bold;
+                    color: white;
+                    background-color: #EF6C00 !important;
+                    border: 0px solid;
+                }
+
+            }
+
+        }
+
 
 
 
     }
 
-   
+
 
 
 
 }
 
-._line{
-margin-top: 20px;
+._line {
+    margin-top: 20px;
     height: 1px;
     width: 1143px;
     background-color: #222222;

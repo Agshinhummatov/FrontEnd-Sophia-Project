@@ -161,6 +161,8 @@ $(document).ready(function () {
 
 
 
+//basket
+
 let cardBtns = document.querySelectorAll("#card-prodacts-carousel .button");
 
 
@@ -193,16 +195,19 @@ cardBtns.forEach(btn => {
 
     if (existProduct != undefined) {
       existProduct.count += 1;
-      existProduct.price = productPrice * existProduct.count;
+      existProduct.total +=existProduct.price
+     
     } else {
 
       products.push({
+
         id: productId,                              // gotrduyum elementleri add edirem 
         name: productName,
         img: prodoctImage,
-        // descripation: productDesc,
+     
         price: productPrice,
-        count: 1
+        count: 1,
+        total: productPrice*1
 
       })
     }
@@ -215,7 +220,7 @@ cardBtns.forEach(btn => {
     localStorage.setItem("basket", JSON.stringify(products));
 
     getBasketCount(products);
-
+    getBasketPrice(products)
 
 
   })
@@ -232,6 +237,20 @@ function getBasketCount(arr){
 }
 
 getBasketCount(products)
+
+
+
+function getBasketPrice(arr){
+  let sum = 0;
+  for (const item of arr) {
+      sum += item.total
+  }
+
+  document.querySelector("._total-price").innerText =  "$" + sum +".00"
+ 
+}
+
+getBasketPrice(products)
 
 
 
