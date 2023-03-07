@@ -217,23 +217,38 @@ cardBtns.forEach(btn => {
 
 
 
+    
+    getBasketPrice(products);
     localStorage.setItem("basket", JSON.stringify(products));
 
+    getBasketDatas(products)
     getBasketCount(products);
-    getBasketPrice(products)
+    
+
+   
+    
+    
+    
+   
+    
+    
+
+
+
 
 
   })
 
+
 });
 
 
-function getBasketCount(arr){
+function getBasketCount(arr) {
   let sum = 0;
   for (const item of arr) {
-      sum += item.count
+    sum += item.count
   }
- document.querySelector("sup").innerText = sum;
+  document.querySelector("sup").innerText = sum;
 }
 
 getBasketCount(products)
@@ -242,13 +257,13 @@ getBasketCount(products)
 
 
 
-function getBasketPrice(arr){
+function getBasketPrice(arr) {
   let sum = 0;
   for (const item of arr) {
-      sum += item.price*item.count
+    sum += item.price * item.count
   }
 
-  document.querySelector("._total-price").innerText =  "$" + sum +".00"
+  document.querySelector("._total-price").innerText = "$" + sum + ".00"
 
 }
 
@@ -266,6 +281,179 @@ getBasketPrice(products)
 // }
 
 // getBasketPrice(products)
+
+
+
+
+
+
+
+
+//basket add 
+
+let tableBody = document.querySelector("tbody")
+
+// let products = JSON.parse(localStorage.getItem("basket"))
+
+
+// cardBtns.forEach(btn => {
+
+//   btn.addEventListener("click", function (e) {
+
+//     e.preventDefault();
+//     localStorage.setItem("basket", JSON.stringify(products));
+//     localStorage.getItem("basket",JSON.stringify(products))
+//     getBasketDatas()
+
+//   })
+
+
+// });
+
+
+
+
+getBasketDatas(products)
+
+function getBasketDatas(products) {
+
+  if (products != null) {
+
+
+
+    for (const product of products) {
+      
+      tableBody.innerHTML = "";
+
+      tableBody.innerHTML += `
+            <tr data-id ="${product.id}">
+            
+            <td>${product.name}</td>
+
+            <td>$${product.price}</td>
+
+            <td><span class="minus">-</span><span>${product.count}</span><span class="plus">+</span></td>
+
+            <td>$${product.price * product.count}</td>
+            
+
+            <td>
+
+            <i class="fa-solid fa-xmark delete-btn" style="color: black; cursor: pointer;"></i>
+            </td>
+
+
+            </tr>`
+
+
+
+
+
+
+    }
+    
+    
+    getBasketCount(products);
+    getBasketPrice(products);
+    // console.log(deleteProducts(document.querySelectorAll(".delete-btn")));
+    
+
+
+
+
+
+
+
+  } else {
+
+    showAlert();
+  }
+
+
+
+}
+
+// getBasketDatas()
+
+
+
+
+function showAlert(e) {
+
+  document.querySelector(".info-basket").classList.add("d-none");
+
+  //eyer data yoxdusa bos Total sozunu sil
+  // document.querySelector("#basket .clear .clear-button").classList.add("d-none")
+  // e.preventDefault();
+}
+
+
+
+// function getBasketCount(arr) {
+//   let sum = 0;
+//   for (const item of arr) {
+//     sum += item.count
+//   }
+//   document.querySelector("sup").innerText = sum;
+
+// }
+
+
+
+//  delete
+
+
+function deleteProduct(id) {
+  products = products.filter(m => m.id != id);
+  localStorage.setItem("basket", JSON.stringify(products));
+
+}
+
+let deleteIcons = document.querySelectorAll(".delete-btn");
+
+deleteProducts(deleteIcons);
+
+function deleteProducts(deleteIcons){
+
+  
+deleteIcons.forEach(icon => {
+
+  icon.addEventListener("click", function () {
+    let id = parseInt(this.parentNode.parentNode.getAttribute("data-id"));
+    deleteProduct(id);
+    // this.parentNode.parentNode.remove();
+    if (products.length == 0) {
+      localStorage.removeItem("basket")
+      showAlert();
+
+    }
+
+
+    // showTotalPrice();
+
+    getBasketCount(products);
+    getBasketPrice(products);
+    
+
+
+
+
+
+
+
+
+
+
+
+
+  })
+});
+
+
+}
+
+
+
 
 
 

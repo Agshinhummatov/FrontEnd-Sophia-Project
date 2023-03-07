@@ -180,9 +180,16 @@
 }
 #basket-cart .info-basket .total-price {
   display: flex;
+  justify-content: flex-end;
+}
+#basket-cart .info-basket .total-price span {
+  font-weight: bold;
 }
 #basket-cart .info-basket .total-price a {
   text-decoration: none;
+}
+#basket-cart .info-basket .total-price a .button-left {
+  margin-right: 614px;
 }
 #basket-cart .info-basket .total-price a button {
   border-top-right-radius: 5px;

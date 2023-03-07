@@ -363,11 +363,21 @@
         .total-price {
 
             display: flex;
-           
+            justify-content: flex-end;
+
+
+            span{
+                font-weight: bold;
+            }
 
             a {
 
                 text-decoration: none;
+
+                .button-left {
+                    margin-right: 614px;
+                }
+                
 
                 button {
                     border-top-right-radius: 5px;
@@ -384,6 +394,7 @@
                 }
 
             }
+            
 
         }
 

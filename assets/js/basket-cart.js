@@ -190,8 +190,8 @@ deleteIcons.forEach(icon => {
 function showTotalPrice() {
     if (products != null) {
         let tittle = document.querySelector(".total");
-        tittle.classList.remove("d-none");
-        tittle.nextElementSibling.classList.remove("d-none");
+        // tittle.classList.remove("d-none");
+        // tittle.nextElementSibling.classList.remove("d-none");
 
         let sum = 0;
         for (const product of products) {

@@ -104,6 +104,41 @@
   color: white;
   font-size: 18px;
 }
+#nav-down .call-contact .basket-number .info-basket {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  overflow-y: scroll;
+  margin-top: 20px;
+  background-color: aqua;
+}
+#nav-down .call-contact .basket-number .info-basket .table .table-body tr td {
+  font-weight: bold;
+}
+#nav-down .call-contact .basket-number .info-basket .table .table-body tr td img {
+  width: 100px;
+  cursor: pointer;
+}
+#nav-down .call-contact .basket-number .info-basket .table .table-body tr b {
+  color: #EF6C00;
+  font-weight: bold;
+}
+#nav-down .call-contact .basket-number .info-basket .total-price {
+  display: flex;
+}
+#nav-down .call-contact .basket-number .info-basket .total-price a {
+  text-decoration: none;
+}
+#nav-down .call-contact .basket-number .info-basket .total-price a button {
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 190px !important;
+  height: 49px;
+  font-weight: bold;
+  color: white;
+  background-color: #EF6C00 !important;
+  border: 0px solid;
+}
 #nav-down .call-contact .basket-number a {
   text-decoration: none;
   display: flex;
