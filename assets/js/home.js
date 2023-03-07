@@ -149,6 +149,14 @@ $(document).ready(function () {
 
 
 
+  // let getBasketProductList = document.querySelector(".basket-number");
+
+  // $(cart).click(function () {
+  //   $(getBasketProductList).toggle();
+
+
+  // });
+
 
 
 
@@ -217,21 +225,21 @@ cardBtns.forEach(btn => {
 
 
 
-    
+
     getBasketPrice(products);
     localStorage.setItem("basket", JSON.stringify(products));
 
     getBasketDatas(products)
     getBasketCount(products);
-    
 
-   
-    
-    
-    
-   
-    
-    
+
+
+
+
+
+
+
+
 
 
 
@@ -293,70 +301,94 @@ getBasketPrice(products)
 
 let tableBody = document.querySelector("tbody")
 
-// let products = JSON.parse(localStorage.getItem("basket"))
 
-
-// cardBtns.forEach(btn => {
-
-//   btn.addEventListener("click", function (e) {
-
-//     e.preventDefault();
-//     localStorage.setItem("basket", JSON.stringify(products));
-//     localStorage.getItem("basket",JSON.stringify(products))
-//     getBasketDatas()
-
-//   })
-
-
-// });
 
 
 
 
 getBasketDatas(products)
 
+
 function getBasketDatas(products) {
 
   if (products != null) {
 
-
+    tableBody.innerHTML = "";
 
     for (const product of products) {
-      
-      tableBody.innerHTML = "";
+
 
       tableBody.innerHTML += `
-            <tr data-id ="${product.id}">
-            
-            <td>${product.name}</td>
 
-            <td>$${product.price}</td>
+      <tr data-id ="${product.id}">
+      
+      <td>${product.name}</td>
 
-            <td><span class="minus">-</span><span>${product.count}</span><span class="plus">+</span></td>
+      <td>$${product.price}</td>
 
-            <td>$${product.price * product.count}</td>
-            
+      <td><span class="minus"></span><span>${product.count}</span><span class="plus"></span></td>
 
-            <td>
+      <td>$${product.price * product.count}</td>
+      
 
-            <i class="fa-solid fa-xmark delete-btn" style="color: black; cursor: pointer;"></i>
-            </td>
+      <td>
+
+      <i class="fa-solid fa-xmark delete-btn" style="color: black; cursor: pointer;"></i>
+      </td>
 
 
-            </tr>`
-
+      </tr>`
 
 
 
 
 
     }
-    
-    
+
+
     getBasketCount(products);
     getBasketPrice(products);
-    // console.log(deleteProducts(document.querySelectorAll(".delete-btn")));
-    
+
+    function deleteProduct(id) {
+      products = products.filter(m => m.id != id);
+      localStorage.setItem("basket", JSON.stringify(products));
+
+    }
+
+    let deleteIcons = document.querySelectorAll(".delete-btn");
+
+
+    deleteIcons.forEach(icon => {
+
+      icon.addEventListener("click", function () {
+        console.log(this);
+        let id = parseInt(this.parentNode.parentNode.getAttribute("data-id"));
+        deleteProduct(id);
+        this.parentNode.parentNode.remove();
+        if (products.length == 0) {
+          localStorage.removeItem("basket")
+          // showAlert();
+
+        }
+
+
+        getBasketCount(products);
+        getBasketPrice(products)
+
+
+
+
+
+
+
+
+
+
+
+
+      })
+    });
+
 
 
 
@@ -366,7 +398,7 @@ function getBasketDatas(products) {
 
   } else {
 
-    showAlert();
+    // showAlert();
   }
 
 
@@ -378,62 +410,45 @@ function getBasketDatas(products) {
 
 
 
-function showAlert(e) {
+// function showAlert(e) {
 
-  document.querySelector(".info-basket").classList.add("d-none");
+//   document.querySelector(".info-basket").classList.add("d-none");
 
-  //eyer data yoxdusa bos Total sozunu sil
-  // document.querySelector("#basket .clear .clear-button").classList.add("d-none")
-  // e.preventDefault();
-}
-
-
-
-// function getBasketCount(arr) {
-//   let sum = 0;
-//   for (const item of arr) {
-//     sum += item.count
-//   }
-//   document.querySelector("sup").innerText = sum;
-
+//   //eyer data yoxdusa bos Total sozunu sil
+//   // document.querySelector("#basket .clear .clear-button").classList.add("d-none")
+//   // e.preventDefault();
 // }
+
+
+
 
 
 
 //  delete
 
+// function deleteProduct(id) {
+//   products = products.filter(m => m.id != id);
+//   localStorage.setItem("basket", JSON.stringify(products));
 
-function deleteProduct(id) {
-  products = products.filter(m => m.id != id);
-  localStorage.setItem("basket", JSON.stringify(products));
+// }
 
-}
-
-let deleteIcons = document.querySelectorAll(".delete-btn");
-
-deleteProducts(deleteIcons);
-
-function deleteProducts(deleteIcons){
-
-  
-deleteIcons.forEach(icon => {
-
-  icon.addEventListener("click", function () {
-    let id = parseInt(this.parentNode.parentNode.getAttribute("data-id"));
-    deleteProduct(id);
-    // this.parentNode.parentNode.remove();
-    if (products.length == 0) {
-      localStorage.removeItem("basket")
-      showAlert();
-
-    }
+// let deleteIcons = document.querySelectorAll(".delete-btn");
 
 
-    // showTotalPrice();
+// deleteIcons.forEach(icon => {
 
-    getBasketCount(products);
-    getBasketPrice(products);
-    
+//   icon.addEventListener("click", function () {
+//     let id = parseInt(this.parentNode.parentNode.getAttribute("data-id"));
+//     deleteProduct(id);
+//     // this.parentNode.parentNode.remove();
+//     if (products.length == 0) {
+//       localStorage.removeItem("basket")
+//       // showAlert();
+
+//     }
+
+//     getBasketCount(products);
+//     getBasketPrice(products)
 
 
 
@@ -446,13 +461,8 @@ deleteIcons.forEach(icon => {
 
 
 
-  })
-});
-
-
-}
-
-
+//   })
+// });
 
 
 
