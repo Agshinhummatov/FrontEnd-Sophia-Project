@@ -1,0 +1,108 @@
+#products .product-info span {
+  cursor: pointer;
+}
+#products .product-info .minus,
+#products .product-info .plus {
+  width: 20px;
+  height: 20px;
+  font-size: 24px;
+  display: inline-block;
+  text-align: center;
+}
+#products .product-info *,
+#products .product-info *::before,
+#products .product-info *::after {
+  box-sizing: content-box;
+}
+#products .product-info input {
+  width: 48px;
+  text-align: center;
+  background-color: #fff;
+  height: 38px;
+  border: 1px solid #d9d9d9;
+  border-top: none;
+  border-bottom: none;
+}
+#products .product-contact {
+  border: 1px solid #ddd;
+}
+#products .product-contact .info-bar-free .info-bar-menu {
+  display: flex;
+  align-items: center;
+  height: 120px;
+  margin-right: 20px;
+  gap: 15px;
+  padding-right: none !important;
+  padding-left: none !important;
+  padding-left: 10px;
+}
+#products .product-contact .info-bar-free .info-bar-menu i {
+  font-size: 30px;
+  color: #333;
+}
+#products .product-contact .info-bar-free .info-bar-menu span {
+  color: #777 !important;
+  font-size: 14px;
+}
+#products .product-contact .info-bar-free .border-buttom-solid {
+  margin-left: 34px;
+  background-color: #e5e5e5;
+  height: 1px;
+  width: 200px;
+}
+#products .product-contact .info-bar-free .free-shoping {
+  gap: 8px !important;
+}
+#products .product-contact .info-bar-free .money-card {
+  gap: 11px !important;
+}
+#products .product-contact .info-bar-free .money-card .icon-usd {
+  margin-left: 16px;
+}
+#products .product-contact .info-bar-free .money-card .icon-usd .i {
+  font-size: 37px;
+}
+#products .big-sale {
+  text-align: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  background-color: #EF6C00;
+  width: 100%;
+  height: 220px;
+}
+#products .big-sale .sale {
+  display: flex;
+  justify-content: center;
+}
+#products .big-sale .sale .number {
+  position: absolute;
+  margin: -39px;
+  margin-right: 2px;
+}
+#products .big-sale .sale span {
+  font-size: 85px;
+  font-weight: bold;
+  color: white;
+}
+#products .big-sale .text {
+  position: absolute;
+  margin: -7px;
+  margin-left: 91px;
+}
+#products .big-sale .text h1 {
+  font-size: 31px;
+  color: white;
+}
+#products .big-sale .text span {
+  font-size: 20px;
+  color: white;
+}
+#products .big-sale .text-lorem {
+  width: 255px;
+  height: 100px;
+  position: absolute;
+  margin-top: 60px;
+}
+#products .big-sale .text-lorem span {
+  font-size: 16px;
+}/*# sourceMappingURL=product.css.map */
