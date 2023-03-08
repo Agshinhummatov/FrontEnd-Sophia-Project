@@ -1,5 +1,29 @@
-#products .product-info span {
-  cursor: pointer;
+#products .product-info .sale-text {
+  display: flex;
+  gap: 15px;
+}
+#products .product-info .sale-text .sale span {
+  font-weight: 600;
+  font-size: 18px;
+  color: #777777;
+  text-decoration-line: line-through;
+}
+#products .product-info .sale-text .sale-info {
+  margin: -5px;
+  font-weight: 600;
+  font-size: 23px;
+  color: red;
+  padding-bottom: 20px;
+}
+#products .product-info .line-text {
+  padding-bottom: 20px;
+  border-bottom: 1px dashed #ddd;
+}
+#products .product-info .stock {
+  padding-top: 20px;
+}
+#products .product-info .stock h6 {
+  font-weight: 400;
 }
 #products .product-info .minus,
 #products .product-info .plus {
@@ -22,6 +46,21 @@
   border: 1px solid #d9d9d9;
   border-top: none;
   border-bottom: none;
+}
+#products .product-info .number {
+  margin-bottom: 20px;
+}
+#products .product-info .button-buy button {
+  background-color: #EF6C00 !important;
+  color: white;
+  width: 128px;
+  height: 36px;
+  font-weight: 500;
+}
+#products .product-info .button-buy .buy-now {
+  width: 100px;
+  height: 36px;
+  font-weight: 500;
 }
 #products .product-contact {
   border: 1px solid #ddd;
@@ -105,4 +144,450 @@
 }
 #products .big-sale .text-lorem span {
   font-size: 16px;
+}
+
+#tab-menu {
+  margin-top: 100px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#tab-menu *,
+#tab-menu *::before,
+#tab-menu *::after {
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+#tab-menu .tab-menu-link {
+  width: 14.5% !important;
+}
+#tab-menu body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #252b46;
+  background: #ffffff;
+}
+#tab-menu .container {
+  max-width: 75rem;
+  height: auto;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+#tab-menu .title {
+  font-family: inherit;
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: inherit;
+  color: #252b46;
+  text-transform: capitalize;
+}
+#tab-menu .paragraph {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: inherit;
+  max-width: 100%;
+  margin-top: 0.5rem;
+  color: #9194a1;
+}
+#tab-menu .main .tab {
+  width: 100%;
+  height: auto;
+  padding: 0.5rem 0;
+}
+#tab-menu .main .tab-menu {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-bottom: 1.3px solid #dbdbdb;
+  transition: all 0.3s ease;
+}
+#tab-menu .main .tab-menu-link {
+  position: relative;
+  overflow: hidden;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: inherit;
+  cursor: pointer;
+  width: 25%;
+  height: auto;
+  padding: 1rem 0;
+  border-bottom: 2.5px solid transparent;
+  color: #9194a1;
+  background: #ffffff;
+  transition: all 0.3s ease;
+}
+#tab-menu .main .tab-menu-link::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 2;
+}
+#tab-menu .main .tab-menu-link.is-active {
+  bottom: 0px;
+  z-index: 0;
+  overflow: hidden;
+  border-bottom: 2.5px solid #fa5757;
+  color: #252b46;
+  background: #ffffff;
+}
+#tab-menu .main .tab-bar {
+  overflow: hidden;
+  background: #ffffff;
+}
+#tab-menu .main .tab-bar-content {
+  display: none;
+  width: 100%;
+  min-height: 10rem;
+  transition: all 0.3s ease;
+}
+#tab-menu .main .tab-bar-content.is-active {
+  display: block;
+}
+#tab-menu .main .reviews {
+  max-width: 100%;
+  padding: 20px;
+}
+#tab-menu .main .reviews .people-info {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 20px;
+}
+#tab-menu .main .reviews .people-info .image {
+  padding-top: 14px;
+}
+#tab-menu .main .reviews .people-info .image img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#tab-menu .main .reviews .people-info .info p {
+  font-size: 14px;
+  line-height: 26px;
+}
+#tab-menu .main .reviews .people-info .info span {
+  font-size: 12px;
+  color: #777 !important;
+}
+#tab-menu .main .reviews .input-submit {
+  /* basic stylings ------------------------------------------ */
+  /* form starting stylings ------------------------------- */
+  /* LABEL ======================================= */
+  /* active state */
+  /* BOTTOM BARS ================================= */
+  /* active state */
+  /* HIGHLIGHTER ================================== */
+  /* active state */
+  /* ANIMATIONS ================ */
+}
+#tab-menu .main .reviews .input-submit * {
+  box-sizing: border-box;
+}
+#tab-menu .main .reviews .input-submit button {
+  height: 45px;
+  width: 141px;
+  background-color: #FF4081 !important;
+}
+#tab-menu .main .reviews .input-submit i {
+  font-size: 20px;
+  cursor: pointer;
+}
+#tab-menu .main .reviews .input-submit body .container {
+  font-family: "Roboto";
+  width: 600px;
+  margin: 30px auto 0;
+  display: block;
+  background: #FFF;
+  padding: 10px 50px 50px;
+}
+#tab-menu .main .reviews .input-submit h2 {
+  margin-bottom: 10px;
+}
+#tab-menu .main .reviews .input-submit .form-submit {
+  margin-top: 50px;
+}
+#tab-menu .main .reviews .input-submit h2 ._line {
+  width: 738px;
+  height: 1px;
+  background-color: #888;
+}
+#tab-menu .main .reviews .input-submit h2 small {
+  font-size: 16px;
+  font-weight: normal;
+  color: #888;
+  display: block;
+}
+#tab-menu .main .reviews .input-submit .input-name {
+  display: flex;
+  gap: 20px;
+}
+#tab-menu .main .reviews .input-submit .group {
+  position: relative;
+  margin-bottom: 45px;
+}
+#tab-menu .main .reviews .input-submit input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 361px;
+  border: none;
+  border-bottom: 1px solid #f44336;
+}
+#tab-menu .main .reviews .input-submit .subject input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #f44336;
+}
+#tab-menu .main .reviews .input-submit .post-contect input {
+  font-size: 18px;
+  padding: 71px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #f44336;
+}
+#tab-menu .main .reviews .input-submit input:focus {
+  outline: none;
+}
+#tab-menu .main .reviews .input-submit label {
+  color: #999;
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+#tab-menu .main .reviews .input-submit input:focus ~ label,
+#tab-menu .main .reviews .input-submit input:valid ~ label {
+  top: -20px;
+  font-size: 14px;
+  color: #f44336;
+}
+#tab-menu .main .reviews .input-submit .bar {
+  position: relative;
+  display: block;
+  width: 361px;
+}
+#tab-menu .main .reviews .input-submit .subject .bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+#tab-menu .main .reviews .input-submit .bar:before,
+#tab-menu .main .reviews .input-submit .bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: #f44336;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+#tab-menu .main .reviews .input-submit .bar:before {
+  left: 50%;
+}
+#tab-menu .main .reviews .input-submit .bar:after {
+  right: 50%;
+}
+#tab-menu .main .reviews .input-submit input:focus ~ .bar:before,
+#tab-menu .main .reviews .input-submit input:focus ~ .bar:after {
+  width: 50%;
+}
+#tab-menu .main .reviews .input-submit .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+#tab-menu .main .reviews .input-submit input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+@keyframes inputHighlighter {
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+.featured-roducts {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.featured-roducts h4 {
+  font-weight: bold;
+}
+.featured-roducts .line {
+  width: 50px;
+  height: 1px;
+  background-color: #777;
+}
+
+#footer {
+  background-color: #F5F5F5;
+  height: 350px;
+}
+#footer .logo-footer {
+  margin-top: 50px;
+  width: 689px;
+  background-color: #F5F5F5;
+  display: flex;
+}
+#footer .logo-footer .footer-about {
+  width: 335px;
+  height: 225px;
+  padding-left: 15px;
+}
+#footer .logo-footer .footer-about a {
+  text-decoration: none;
+  color: #383838;
+}
+#footer .logo-footer .footer-about p {
+  line-height: 24px;
+  color: #333;
+  font-weight: 400;
+}
+#footer .logo-footer .services {
+  width: 299px;
+  margin-left: 25px;
+}
+#footer .logo-footer .services h5 {
+  color: #383838;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 600;
+}
+#footer .logo-footer .services ul {
+  padding: 0px;
+}
+#footer .logo-footer .services ul li {
+  list-style: none;
+}
+#footer .logo-footer .services ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 32px;
+  color: #333;
+}
+#footer .subscribe-address-info {
+  margin-top: 50px;
+  width: 636px;
+  display: flex;
+  background-color: #F5F5F5;
+}
+#footer .subscribe-address-info .subscribe {
+  width: 315px;
+  padding-right: 15px;
+}
+#footer .subscribe-address-info .subscribe h5 {
+  color: #383838;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 600;
+}
+#footer .subscribe-address-info .subscribe p {
+  line-height: 24px;
+  color: #333;
+  font-weight: 400;
+}
+#footer .subscribe-address-info .subscribe input {
+  height: 45px;
+  width: 260px;
+  background: #fff;
+  font-size: 15px;
+  line-height: 45px;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  padding: 0 65px 0 20px;
+  color: #777;
+}
+#footer .subscribe-address-info .subscribe button {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 0 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+  z-index: 222;
+  background-color: #ef6c00;
+  color: #fff;
+  border-radius: 3px;
+  line-height: 45px;
+  width: 260px;
+}
+#footer .subscribe-address-info .contact-info {
+  width: 315px;
+}
+#footer .subscribe-address-info .contact-info h5 {
+  color: #383838;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 600;
+}
+#footer .subscribe-address-info .contact-info .address p {
+  display: inline-block;
+  line-height: 24px;
+  color: #333;
+  font-weight: 400;
+}
+#footer .subscribe-address-info .contact-info .telnumber p {
+  display: inline-block;
+  line-height: 24px;
+  color: #333;
+  font-weight: 400;
+}
+#footer .subscribe-address-info .contact-info .message p {
+  display: inline-block;
+  line-height: 24px;
+  color: #333;
+  font-weight: 400;
+}
+#footer .subscribe-address-info .contact-info .socials ul {
+  display: flex;
+  padding: 0px;
+}
+#footer .subscribe-address-info .contact-info .socials ul li {
+  width: 33px;
+  height: 33px;
+  border: 1px solid #444;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 5px;
+  list-style: none;
+}
+#footer .subscribe-address-info .contact-info .socials ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 32px;
+  color: #333;
 }/*# sourceMappingURL=product.css.map */
