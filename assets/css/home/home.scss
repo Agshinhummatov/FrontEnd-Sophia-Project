@@ -1,4 +1,3 @@
-
 .nav-bar {
     display: flex;
 
@@ -175,23 +174,38 @@
         .basket-number {
 
 
-
             .info-basket {
                 box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
                 position: absolute;
                 margin-top: 25px;
                 z-index: 20;
                 width: 289px;
-                 height: 282px;
+               
                 overflow: auto;
-                background-color: aqua;
+                background-color: white;
 
+                .subtotal{
+                    width: 249px;
+                    height: 59px;
+                    display: flex;
+                    justify-content: space-between;
+                }
+                
 
+                .table>:not(caption)>*>* {
+                    padding: 0.5rem 0.5rem;
+                    background-color: var(--bs-table-bg);
+                    border-bottom-width: 0 !important;
+                    box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
+                }
                 .table {
+                    
+
+                    
 
 
                     .table-body {
-                      
+
 
 
 
@@ -199,6 +213,7 @@
 
                             td {
 
+                                border-bottom-width: none!important;
                                 font-weight: bold;
 
                                 img {
@@ -207,6 +222,18 @@
                                 }
 
 
+                            }
+
+
+                            .price {
+                                position: absolute;
+                                margin-top: 30px;
+                                margin-left: -189px;
+                            }
+
+                            .name {
+                                width: 200px;
+                                height: 65px;
                             }
 
                             b {

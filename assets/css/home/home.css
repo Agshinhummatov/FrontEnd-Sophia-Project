@@ -110,16 +110,37 @@
   margin-top: 25px;
   z-index: 20;
   width: 289px;
-  height: 282px;
   overflow: auto;
-  background-color: aqua;
+  background-color: white;
+}
+#nav-down .call-contact .basket-number .info-basket .subtotal {
+  width: 249px;
+  height: 59px;
+  display: flex;
+  justify-content: space-between;
+}
+#nav-down .call-contact .basket-number .info-basket .table > :not(caption) > * > * {
+  padding: 0.5rem 0.5rem;
+  background-color: var(--bs-table-bg);
+  border-bottom-width: 0 !important;
+  box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
 }
 #nav-down .call-contact .basket-number .info-basket .table .table-body tr td {
+  border-bottom-width: none !important;
   font-weight: bold;
 }
 #nav-down .call-contact .basket-number .info-basket .table .table-body tr td img {
   width: 100px;
   cursor: pointer;
+}
+#nav-down .call-contact .basket-number .info-basket .table .table-body tr .price {
+  position: absolute;
+  margin-top: 30px;
+  margin-left: -189px;
+}
+#nav-down .call-contact .basket-number .info-basket .table .table-body tr .name {
+  width: 200px;
+  height: 65px;
 }
 #nav-down .call-contact .basket-number .info-basket .table .table-body tr b {
   color: #EF6C00;

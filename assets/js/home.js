@@ -209,7 +209,7 @@ cardBtns.forEach(btn => {
 
       products.push({
 
-        id: productId,                              // gotrduyum elementleri add edirem
+        id: productId,                             
         name: productName,
         img: prodoctImage,
 
@@ -273,9 +273,16 @@ function getBasketPrice(arr) {
 
   document.querySelector("._total-price").innerText = "$" + sum + ".00"
 
+  document.querySelector(".total-price-basket").innerText = "$" + sum + ".00"
+ 
+  
+
+
 }
 
 getBasketPrice(products)
+
+
 
 
 // function getBasketPrice(arr){
@@ -322,19 +329,24 @@ function getBasketDatas(products) {
 
       <tr data-id ="${product.id}">
       
-      <td>${product.name}</td>
+      
+      <td class ="name">${product.name}</td>
 
-      <td>$${product.price}</td>
+      
 
-      <td><span class="minus"></span><span>${product.count}</span><span class="plus"></span></td>
+      <td><span class="minus"></span><span></span><span class="plus"></span></td>
 
-      <td>$${product.price * product.count}</td>
+      <td class ="price">${product.count}X${product.price}</td>
+
+      <td>$${product.price *product.count}</td>
       
 
       <td>
+      
 
-      <i class="fa-solid fa-xmark delete-btn" style="color: black; cursor: pointer;"></i>
+      <i class="fa-solid fa-trash delete-btn" style="color: black; cursor: pointer;"></i>
       </td>
+      
 
 
       </tr>`
