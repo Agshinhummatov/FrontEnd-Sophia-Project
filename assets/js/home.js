@@ -149,13 +149,23 @@ $(document).ready(function () {
 
 
 
-  // let getBasketProductList = document.querySelector(".basket-number");
-
-  // $(cart).click(function () {
-  //   $(getBasketProductList).toggle();
+  let getBasketProductList = document.querySelector(".basket-number");
 
 
-  // });
+  
+  let tableicon = document.querySelector(".info-basket");
+
+
+
+  $(getBasketProductList).click(function () {
+    $(tableicon).toggle();
+
+
+  });
+
+
+
+
 
 
 
@@ -187,7 +197,7 @@ if (localStorage.getItem("basket") != null) {
 cardBtns.forEach(btn => {
   btn.addEventListener("click", function (e) {
 
-    e.preventDefault();
+    // e.preventDefault();
     let prodoctImage = this.parentNode.parentNode.previousElementSibling.firstElementChild.firstElementChild.firstElementChild.getAttribute("src");
 
 
@@ -226,11 +236,14 @@ cardBtns.forEach(btn => {
 
 
 
+   
     getBasketPrice(products);
     localStorage.setItem("basket", JSON.stringify(products));
-
-    getBasketDatas(products)
+    
+    itemCountTotal(products);
+    getBasketDatas();
     getBasketCount(products);
+    
 
 
 
@@ -285,6 +298,26 @@ getBasketPrice(products)
 
 
 
+
+
+let totalItem = document.querySelector(".item-count")
+
+
+itemCountTotal(products);
+
+function itemCountTotal(products){
+
+ 
+
+  totalItem.innerText = products.length
+
+}
+
+
+
+
+
+
 // function getBasketPrice(arr){
 //   let sum = 0;
 //   for (const item of arr) {
@@ -313,10 +346,10 @@ let tableBody = document.querySelector("tbody")
 
 
 
-getBasketDatas(products)
+getBasketDatas()
 
 
-function getBasketDatas(products) {
+function getBasketDatas() {
 
   if (products != null) {
 
@@ -357,9 +390,10 @@ function getBasketDatas(products) {
 
     }
 
-
-    getBasketCount(products);
-    getBasketPrice(products);
+    // itemCountTotal(products);
+    // getBasketCount(products);
+    // getBasketPrice(products);
+    
 
     function deleteProduct(id) {
       products = products.filter(m => m.id != id);
@@ -373,7 +407,7 @@ function getBasketDatas(products) {
     deleteIcons.forEach(icon => {
 
       icon.addEventListener("click", function () {
-        console.log(this);
+        
         let id = parseInt(this.parentNode.parentNode.getAttribute("data-id"));
         deleteProduct(id);
         this.parentNode.parentNode.remove();
@@ -383,9 +417,11 @@ function getBasketDatas(products) {
 
         }
 
-
+        
         getBasketCount(products);
-        getBasketPrice(products)
+        getBasketPrice(products);
+        itemCountTotal(products);
+       
 
 
 

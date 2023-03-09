@@ -171,6 +171,8 @@
             font-size: 18px;
         }
 
+
+
         .basket-number {
 
 
@@ -180,17 +182,28 @@
                 margin-top: 25px;
                 z-index: 20;
                 width: 289px;
-               
+                display: none;
+                left: 3px;
+                position: absolute;
+                display: block;
+                top: 40px;
+                border-top-right-radius: 4px;
+                border-bottom-left-radius: 4px;
+                border-bottom-right-radius: 4px;
+                border-top-left-radius: 4px;
+
                 overflow: auto;
                 background-color: white;
 
-                .subtotal{
+                .subtotal {
                     width: 249px;
                     height: 59px;
                     display: flex;
                     justify-content: space-between;
                 }
-                
+
+
+              
 
                 .table>:not(caption)>*>* {
                     padding: 0.5rem 0.5rem;
@@ -198,22 +211,39 @@
                     border-bottom-width: 0 !important;
                     box-shadow: inset 0 0 0 9999px var(--bs-table-accent-bg);
                 }
-                .table {
-                    
 
-                    
+
+               
+
+
+                #check-card {
+                    text-decoration: none;
+                    color: black;
+                }
+                
+                .check{
+                   display: flex;
+                   justify-content: space-between;
+                   
+                }
+
+
+                .table {
+                   
+
 
 
                     .table-body {
 
-
+                    
+                       
 
 
                         tr {
 
                             td {
 
-                                border-bottom-width: none!important;
+                                border-bottom-width: none !important;
                                 font-weight: bold;
 
                                 img {
@@ -259,6 +289,8 @@
                 }
 
 
+                
+
                 .total-price {
 
                     display: flex;
@@ -302,9 +334,10 @@
 
 
             //sub podacts
-            a {
-                text-decoration: none;
+            .sub-total {
+                // text-decoration: none;
                 display: flex;
+                cursor: pointer;
 
                 i {
                     font-size: 18px;
@@ -394,9 +427,9 @@
             li {
                 width: 100px !important;
 
-
+                 transition: 0.3s;
                 a {
-
+                    
                     font-size: 17px;
                     font-weight: bold;
                 }

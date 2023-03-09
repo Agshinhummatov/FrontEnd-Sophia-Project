@@ -1,1 +1,385 @@
-/*# sourceMappingURL=contact.css.map */
+main #page-title {
+  padding: 20px 0;
+  border-bottom: 1px solid #f3f3f3;
+}
+main #page-title .contact h4 {
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+}
+main #page-title .content {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+main #page-title .content li {
+  list-style: none;
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+main #page-title .content li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  font-size: 14px;
+}
+main #page-title .content .about-us {
+  display: flex;
+}
+main #contact-us .map {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 20px;
+  height: 960.15px;
+  border-radius: 10px;
+  /* form starting stylings ------------------------------- */
+  /* LABEL ======================================= */
+  /* active state */
+  /* BOTTOM BARS ================================= */
+  /* active state */
+  /* HIGHLIGHTER ================================== */
+  /* active state */
+  /* ANIMATIONS ================ */
+}
+main #contact-us .map .title {
+  margin-top: 20px;
+}
+main #contact-us .map .title h3 {
+  font-size: 28px;
+  color: #383838;
+}
+main #contact-us .map .icons ul {
+  padding: 0;
+}
+main #contact-us .map .icons ul li {
+  border-bottom: 1px solid #e5e5e5;
+  list-style: none;
+}
+main #contact-us .map .icons ul li i {
+  float: left;
+  font-size: 33px;
+  color: #EF6C00;
+  margin-right: 7px;
+  line-height: 60px;
+}
+main #contact-us .map .icons ul li h4 {
+  margin: 0;
+}
+main #contact-us .map button {
+  background-color: #EF6C00;
+  color: white;
+  width: 95.66px;
+  height: 46px;
+  border-radius: 4px;
+  margin-top: -14px;
+}
+main #contact-us .map h2 small {
+  font-weight: normal;
+  color: #888;
+  display: block;
+}
+main #contact-us .map .footer {
+  text-align: center;
+}
+main #contact-us .map .footer a {
+  color: red;
+}
+main #contact-us .map .group {
+  position: relative;
+  margin-bottom: 45px;
+}
+main #contact-us .map input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+main #contact-us .map input:focus {
+  outline: none;
+}
+main #contact-us .map label {
+  color: #999;
+  font-size: 15px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+main #contact-us .map input:focus ~ label,
+main #contact-us .map input:valid ~ label {
+  top: -7px;
+  font-size: 12px;
+  color: red;
+}
+main #contact-us .map .bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+main #contact-us .map .bar:before,
+main #contact-us .map .bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: red;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+main #contact-us .map .bar:before {
+  left: 50%;
+}
+main #contact-us .map .bar:after {
+  right: 50%;
+}
+main #contact-us .map input:focus ~ .bar:before,
+main #contact-us .map input:focus ~ .bar:after {
+  width: 0%;
+}
+main #contact-us .map .highlight {
+  position: absolute;
+  height: 60%;
+  width: 80px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+main #contact-us .map input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+@keyframes inputHighlighter {
+  from {
+    background: #5264AE;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+#footer {
+  background-color: #F5F5F5;
+  height: 350px;
+}
+#footer .logo-footer {
+  margin-top: 50px;
+  width: 689px;
+  background-color: #F5F5F5;
+  display: flex;
+}
+#footer .logo-footer .footer-about {
+  width: 335px;
+  height: 225px;
+  padding-left: 15px;
+}
+#footer .logo-footer .footer-about a {
+  text-decoration: none;
+  color: #383838;
+}
+#footer .logo-footer .footer-about p {
+  line-height: 24px;
+  color: #333;
+  font-weight: 400;
+}
+#footer .logo-footer .services {
+  width: 299px;
+  margin-left: 25px;
+}
+#footer .logo-footer .services h5 {
+  color: #383838;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 600;
+}
+#footer .logo-footer .services ul {
+  padding: 0px;
+}
+#footer .logo-footer .services ul li {
+  list-style: none;
+}
+#footer .logo-footer .services ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 32px;
+  color: #333;
+}
+#footer .subscribe-address-info {
+  margin-top: 50px;
+  width: 636px;
+  display: flex;
+  background-color: #F5F5F5;
+}
+#footer .subscribe-address-info .subscribe {
+  width: 315px;
+  padding-right: 15px;
+}
+#footer .subscribe-address-info .subscribe h5 {
+  color: #383838;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 600;
+}
+#footer .subscribe-address-info .subscribe p {
+  line-height: 24px;
+  color: #333;
+  font-weight: 400;
+}
+#footer .subscribe-address-info .subscribe input {
+  height: 45px;
+  width: 260px;
+  background: #fff;
+  font-size: 15px;
+  line-height: 45px;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  padding: 0 65px 0 20px;
+  color: #777;
+}
+#footer .subscribe-address-info .subscribe button {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 20px;
+  padding: 0 10px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 0.4s ease 0s;
+  z-index: 222;
+  background-color: #ef6c00;
+  color: #fff;
+  border-radius: 3px;
+  line-height: 45px;
+  width: 260px;
+}
+#footer .subscribe-address-info .contact-info {
+  width: 315px;
+}
+#footer .subscribe-address-info .contact-info h5 {
+  color: #383838;
+  line-height: 24px;
+  font-size: 20px;
+  font-weight: 600;
+}
+#footer .subscribe-address-info .contact-info .address p {
+  display: inline-block;
+  line-height: 24px;
+  color: #333;
+  font-weight: 400;
+}
+#footer .subscribe-address-info .contact-info .telnumber p {
+  display: inline-block;
+  line-height: 24px;
+  color: #333;
+  font-weight: 400;
+}
+#footer .subscribe-address-info .contact-info .message p {
+  display: inline-block;
+  line-height: 24px;
+  color: #333;
+  font-weight: 400;
+}
+#footer .subscribe-address-info .contact-info .socials ul {
+  display: flex;
+  padding: 0px;
+}
+#footer .subscribe-address-info .contact-info .socials ul li {
+  width: 33px;
+  height: 33px;
+  border: 1px solid #444;
+  border-radius: 50%;
+  text-align: center;
+  margin-right: 5px;
+  list-style: none;
+}
+#footer .subscribe-address-info .contact-info .socials ul li a {
+  text-decoration: none;
+  font-size: 15px;
+  line-height: 32px;
+  color: #333;
+}
+
+#teams .title {
+  text-align: center;
+  margin-top: 50px;
+}
+#teams .title h2 {
+  margin-bottom: 10px;
+  font-size: 36px;
+  text-transform: capitalize;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: #383838;
+  font-weight: 700;
+}
+#teams .title p {
+  color: #777;
+  font-weight: 500;
+}
+#teams .team-members {
+  display: flex;
+}
+#teams .team-members .single-team-member {
+  width: 295px;
+}
+#teams .team-members .single-team-member:hover img {
+  opacity: 0.5;
+}
+#teams .team-members .single-team-member:hover .social {
+  transform: translateY(-65px);
+}
+#teams .team-members .single-team-member:hover .text {
+  background-color: #444444;
+}
+#teams .team-members .single-team-member:hover .text h4 {
+  color: white;
+}
+#teams .team-members .single-team-member:hover .text p {
+  color: white;
+}
+#teams .team-members .single-team-member .img {
+  height: 365px;
+  overflow-y: hidden;
+}
+#teams .team-members .single-team-member .img img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.4s;
+}
+#teams .team-members .single-team-member .social {
+  display: flex;
+  height: 65px;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #4050b5;
+  transition: all 0.4s;
+}
+#teams .team-members .single-team-member .social a i {
+  color: white;
+}
+#teams .team-members .single-team-member .text {
+  border: 1px solid #f6f6f6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: 0.4s ease;
+  text-align: center;
+}
+#teams .team-members .single-team-member .text h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+#teams .team-members .single-team-member .text p {
+  margin: 0;
+  color: #333;
+}/*# sourceMappingURL=contact.css.map */
