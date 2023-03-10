@@ -103,6 +103,7 @@ function getBasketDatas() {
 function showAlert(e) {
 
     document.querySelector(".info-basket").classList.add("d-none");
+    document.querySelector(".basket-button").classList.remove("basket-btn");
 
     //eyer data yoxdusa bos Total sozunu sil
     // document.querySelector("#basket .clear .clear-button").classList.add("d-none")
@@ -111,12 +112,14 @@ function showAlert(e) {
 
 
 
-function getBasketCount(arr) {
-    let sum = 0;
-    for (const item of arr) {
-        sum += item.count
-    }
-    document.querySelector("sup").innerText = sum;
+
+
+function getBasketCount(products) {
+  
+
+    
+ 
+  document.querySelector("sup").innerText = products.length 
 
 }
 
@@ -160,7 +163,7 @@ deleteIcons.forEach(icon => {
     icon.addEventListener("click", function () {
         let id = parseInt(this.parentNode.parentNode.getAttribute("data-id"));
         deleteProduct(id);
-        // this.parentNode.parentNode.remove();
+        this.parentNode.parentNode.remove();
         if (products.length == 0) {
             localStorage.removeItem("basket")
             showAlert();

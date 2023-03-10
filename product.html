@@ -20,8 +20,7 @@
 
 <body>
 
-
-
+    
     <header>
         <section id="nav">
 
@@ -48,7 +47,7 @@
                             <div class="ui search selection dropdown">
                                 <input type="hidden" name="country" id="country">
                                 <i class="dropdown icon"></i>
-                                <div class="default text">Select Country</div>
+                                <div class="default text"><i class="gb flag"></i>English</div>
                                 <div class="menu">
                                     <div class="item" data-value="gb"><i class="gb flag"></i>English</div>
                                     <div class="item" data-value="de"><i class="de flag"></i>German</div>
@@ -169,10 +168,93 @@
                             </div>
 
 
+
+
                             <div class="basket-number">
 
-                                <a href="">
 
+
+
+
+
+                                <div class="info-basket">
+
+
+
+                                    <table class="table table-bodys">
+                                        
+
+                                        <div class="check">
+                                                     
+                                            <a id="check-card" href="basket-cart.html"> CHECK CARD</a>
+                                            
+                                            <div class="item-count"><span>0</span></div>
+                                            <span class="item-basket">ITEM</span>
+
+                                            
+                                        </div>
+
+                                        <div class="line-basket">
+
+                                        </div>
+                                        <tbody class="table-body">
+
+
+
+
+
+
+
+
+
+
+
+
+                                        </tbody>
+
+
+
+
+
+
+
+
+
+
+                                    </table>
+                                          
+                                
+                                    
+                                    
+                                    <div class="subtotal-basket">
+                                        <div class="basket-card-total">
+                                            <span>Subtotal:</span>
+
+
+                                        </div>
+
+                                        <div>
+
+                                            <b class="total-price-basket"></b>
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+                                <div class="sub-total">
+                                    
                                     <div>
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </div>
@@ -182,15 +264,10 @@
                                     </div>
 
                                     <p class="_total-price">0.00</p>
-                                </a>
+                                </div>
 
 
                             </div>
-
-
-
-
-
 
 
 
@@ -227,13 +304,13 @@
                                         <a class="nav-link " aria-current="page" href="home.html">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">About</a>
+                                        <a class="nav-link" href="about.html">About</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Contact</a>
+                                        <a class="nav-link" href="contact.html">Contact</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Blog</a>
+                                        <a class="nav-link" href="blog.html">Blog</a>
                                     </li>
                                     <li class="nav-item dropdown page-list">
                                         <a class="nav-link dropdown-toggle" href="#" role="button"
@@ -243,8 +320,9 @@
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="#">Wishlisht</a></li>
                                             <li><a class="dropdown-item" href="#">Cart</a></li>
-                                            <li><a class="dropdown-item" href="#">Checkout</a></li>
+                                            <li><a class="dropdown-item" href="basket-cart.html">Checkout</a></li>
                                             <li><a class="dropdown-item" href="#">My Account</a></li>
+                                            <li><a class="dropdown-item" href="product.html">Product</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -272,6 +350,8 @@
 
     </header>
 
+
+    
 
 
 
@@ -1024,8 +1104,12 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
         integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
         crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
     <script src="https://kit.fontawesome.com/09a7df35a3.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/common.js"></script>
     <script src="./assets/js/product.js"></script>
+  
 </body>
 
 </html>

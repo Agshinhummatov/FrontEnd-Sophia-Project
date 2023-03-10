@@ -222,4 +222,32 @@
   height: 1px;
   width: 1143px;
   background-color: #222222;
+}
+
+.basket-button {
+  text-align: center;
+}
+.basket-button .shoping-cart button {
+  width: 327px;
+  height: 50px;
+  background-color: #f33927;
+  border-radius: 16px;
+  align-items: center;
+  cursor: default;
+  min-height: 32px;
+  height: 1px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+.basket-button .contiune-shoping button {
+  margin-top: 20px;
+  background-color: #ef6c00;
+  width: 200px;
+  height: 50px;
+  color: white;
+  font-weight: 600;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.basket-btn {
+  display: none;
 }/*# sourceMappingURL=basket-cart.css.map */
