@@ -181,12 +181,25 @@
 #basket-cart .info-basket .total-price {
   display: flex;
   justify-content: flex-end;
+  height: 98px;
+  padding-top: 20px;
+  padding-right: 22px;
+}
+#basket-cart .info-basket .total-price .shopping {
+  width: 733px;
+  margin-left: 50px;
 }
 #basket-cart .info-basket .total-price span {
   font-weight: bold;
 }
+#basket-cart .info-basket .total-price .grand-total {
+  margin-top: 13px;
+  width: 200px;
+}
 #basket-cart .info-basket .total-price a {
   text-decoration: none;
+  font-weight: bold;
+  color: black;
 }
 #basket-cart .info-basket .total-price a .button-left {
   margin-right: 614px;

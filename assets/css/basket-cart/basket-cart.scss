@@ -367,16 +367,27 @@
 
             display: flex;
             justify-content: flex-end;
-
-
+            height: 98px;
+            padding-top: 20px;
+            padding-right: 22px;
+            .shopping{
+                width: 733px;
+                margin-left: 50px;
+            }
             span{
                 font-weight: bold;
+            }
+            .grand-total{
+
+                margin-top: 13px;
+                width: 200px;
             }
 
             a {
 
                 text-decoration: none;
-
+                 font-weight: bold;
+                 color: black;
                 .button-left {
                     margin-right: 614px;
                 }

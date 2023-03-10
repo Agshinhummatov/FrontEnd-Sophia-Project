@@ -122,11 +122,17 @@
   overflow: auto;
   background-color: white;
 }
-#nav-down .call-contact .basket-number .info-basket .subtotal {
+#nav-down .call-contact .basket-number .info-basket .subtotal-basket {
+  border-top: 1px solid #C3C3C3;
   width: 249px;
   height: 59px;
   display: flex;
   justify-content: space-between;
+  margin-left: 20px;
+  padding-top: 10px;
+}
+#nav-down .call-contact .basket-number .info-basket .subtotal-basket .basket-card-total span {
+  font-weight: 400;
 }
 #nav-down .call-contact .basket-number .info-basket .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
@@ -137,10 +143,26 @@
 #nav-down .call-contact .basket-number .info-basket #check-card {
   text-decoration: none;
   color: black;
+  font-weight: 600;
 }
 #nav-down .call-contact .basket-number .info-basket .check {
   display: flex;
   justify-content: space-between;
+  border-top: 5px solid #C3C3C3;
+  padding: 20px;
+}
+#nav-down .call-contact .basket-number .info-basket .check .item-count {
+  margin-left: 114px;
+  font-weight: 600;
+}
+#nav-down .call-contact .basket-number .info-basket .check span {
+  font-weight: 600;
+}
+#nav-down .call-contact .basket-number .info-basket .line-basket {
+  height: 1px;
+  width: 250px;
+  background-color: #C3C3C3;
+  margin-left: 18px;
 }
 #nav-down .call-contact .basket-number .info-basket .table .table-body tr td {
   border-bottom-width: none !important;
@@ -153,9 +175,11 @@
 #nav-down .call-contact .basket-number .info-basket .table .table-body tr .price {
   position: absolute;
   margin-top: 30px;
-  margin-left: -189px;
+  margin-left: -219px;
+  font-weight: 600;
 }
 #nav-down .call-contact .basket-number .info-basket .table .table-body tr .name {
+  padding-left: 20px;
   width: 200px;
   height: 65px;
 }

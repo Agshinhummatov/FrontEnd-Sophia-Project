@@ -195,11 +195,26 @@
                 overflow: auto;
                 background-color: white;
 
-                .subtotal {
+                .subtotal-basket{
+                    border-top: 1px solid #C3C3C3;
                     width: 249px;
                     height: 59px;
                     display: flex;
                     justify-content: space-between;
+                    
+                    margin-left: 20px;
+                    padding-top: 10px;
+                    
+                    .basket-card-total{
+                        
+                        span{
+                            font-weight: 400;
+                        }
+                    }
+                    
+
+                    
+
                 }
 
 
@@ -219,19 +234,40 @@
                 #check-card {
                     text-decoration: none;
                     color: black;
+                    font-weight: 600;
                 }
                 
                 .check{
                    display: flex;
                    justify-content: space-between;
+                   border-top: 5px solid #C3C3C3;
+                   padding: 20px;
                    
+                   
+                  .item-count{
+                    margin-left: 114px;
+                    font-weight: 600;
+
+                  }
+
+                  span{
+                    font-weight: 600;
+                  }
+                }
+
+                .line-basket{
+
+                    height: 1px;
+                    width: 250px;
+                    background-color: #C3C3C3;
+                    margin-left: 18px;
                 }
 
 
                 .table {
                    
 
-
+                  
 
                     .table-body {
 
@@ -258,10 +294,13 @@
                             .price {
                                 position: absolute;
                                 margin-top: 30px;
-                                margin-left: -189px;
+                                margin-left: -219px;
+                                font-weight: 600;
+                               
                             }
 
                             .name {
+                                padding-left: 20px;
                                 width: 200px;
                                 height: 65px;
                             }

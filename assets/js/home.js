@@ -309,7 +309,7 @@ function itemCountTotal(products){
 
  
 
-  totalItem.innerText = products.length
+  totalItem.innerText =  products.length 
 
 }
 
@@ -371,7 +371,7 @@ function getBasketDatas() {
 
       <td class ="price">${product.count}X${product.price}</td>
 
-      <td>$${product.price *product.count}</td>
+      
       
 
       <td>
