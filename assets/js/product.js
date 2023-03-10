@@ -17,9 +17,33 @@ $(document).ready(function () {
 
 
 
+
   //slide
 
+  
+$('._slider').slick({
+  infinite: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  prevArrow:'<i class="fa-solid fa-chevron-left"></i>',
+  nextArrow:'<i class="fa-solid fa-chevron-right"></i>'
+});
+
+let mainImg = document.querySelector(".main-img img");
+
+
+let sliderImg = document.querySelectorAll("._slider .slide")
+
+for (const item of sliderImg) {
+  
+  item.addEventListener("click",function(){
+
+    mainImg.setAttribute("src",this.firstElementChild.getAttribute("src"));
+  })
+}
  
+
+
 
 
 
