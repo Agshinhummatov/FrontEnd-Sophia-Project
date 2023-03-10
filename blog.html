@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <link
+        href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css"
+        rel="stylesheet" type="text/css" />
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/blog/blog.css">
+    <title>Blog</title>
+</head>
+<body>
+
+    
+    <header>
+        <section id="nav">
+
+
+
+            <div class="container">
+
+                <div class="row">
+
+
+
+                    <div class="col-5">
+
+                        <div class="_usd">
+
+
+
+
+                        </div>
+
+                        <div class="flag">
+
+                            <div class="ui divider hidden "></div>
+                            <div class="ui search selection dropdown">
+                                <input type="hidden" name="country" id="country">
+                                <i class="dropdown icon"></i>
+                                <div class="default text"><i class="gb flag"></i>English</div>
+                                <div class="menu">
+                                    <div class="item" data-value="gb"><i class="gb flag"></i>English</div>
+                                    <div class="item" data-value="de"><i class="de flag"></i>German</div>
+                                    <div class="item" data-value="fr"><i class="fr flag"></i>French</div>
+                                    <div class="item" data-value="ru"><i class="ru flag"></i>Russia</div>
+                                    <div class="item" data-value="tr"><i class="tr flag"></i>Turkey</div>
+                                    <div class="item" data-value="az"><i class="az flag"></i>Azerbaijan</div>
+
+                                </div>
+                            </div>
+
+                            <div class="ui divider hidden"></div>
+
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="col-3">
+
+                    </div>
+
+                    <div class="col-4 ">
+                        <div class="nav-right-icon">
+                            <a href=""> <i class="fa-regular fa-heart"></i><span> WISHLIST</span></a>
+
+
+
+
+                            <a href=""><i class="fa-solid fa-rotate"></i>
+                                <span> COMPARE</span>
+                            </a>
+
+                            <a href="">
+                                <i class="fa-solid fa-user"></i>
+                                <span> My Account</span>
+                            </a>
+
+
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </section>
+
+
+        <section id="nav-down">
+
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-2">
+
+                        <div class="Sophia">
+                            <a href="home.html">
+                                <img src="./assets/img/Home/logo/logo-white.png" alt="">
+                            </a>
+
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="col-7">
+
+                        <div class="search">
+
+                            <input type="text" placeholder="Type to search...">
+                            <button type="button" class="btn btn-dark">Search</button>
+
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="col-3">
+
+                        <div class="call-contact">
+
+                            <i class="fa-solid fa-phone call-icon"></i>
+
+
+                            <div>
+
+                                <div class="call-helpline">
+                                    <span>Helpline:</span>
+
+                                </div>
+
+                                <div class="call-number">
+                                    <b>
+                                        02(981)336 111
+                                    </b>
+                                </div>
+                            </div>
+
+
+
+
+                            <div class="basket-number">
+
+
+
+
+
+
+                                <div class="info-basket">
+
+
+
+                                    <table class="table table-bodys">
+                                        
+
+                                        <div class="check">
+                                                     
+                                            <a id="check-card" href="basket-cart.html"> CHECK CARD</a>
+                                            
+                                            <div class="item-count"><span>0</span></div>
+                                            <span class="item-basket">ITEM</span>
+
+                                            
+                                        </div>
+
+                                        <div class="line-basket">
+
+                                        </div>
+                                        <tbody class="table-body">
+
+
+
+
+
+
+
+
+
+
+
+
+                                        </tbody>
+
+
+
+
+
+
+
+
+
+
+                                    </table>
+                                          
+                                
+                                    
+                                    
+                                    <div class="subtotal-basket">
+                                        <div class="basket-card-total">
+                                            <span>Subtotal:</span>
+
+
+                                        </div>
+
+                                        <div>
+
+                                            <b class="total-price-basket"></b>
+                                        </div>
+
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+
+
+
+
+
+
+                                <div class="sub-total">
+                                    
+                                    <div>
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </div>
+
+                                    <div class="sup-number">
+                                        <sup>0</sup>
+                                    </div>
+
+                                    <p class="_total-price">0.00</p>
+                                </div>
+
+
+                            </div>
+
+
+
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+        </section>
+
+        <section id="navbar-tabs">
+
+            <div class="container">
+
+                <div class="navbar-page">
+
+
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary nav-body">
+                        <div class="container-fluid navbar-info">
+
+                            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                                <ul class="navbar-nav navbar-li">
+                                    <li class="nav-item">
+                                        <a class="nav-link " aria-current="page" href="home.html">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about.html">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact.html">Contact</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="blog.html">Blog</a>
+                                    </li>
+                                    <li class="nav-item dropdown page-list">
+                                        <a class="nav-link dropdown-toggle" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            Pages
+                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Wishlisht</a></li>
+                                            <li><a class="dropdown-item" href="#">Cart</a></li>
+                                            <li><a class="dropdown-item" href="basket-cart.html">Checkout</a></li>
+                                            <li><a class="dropdown-item" href="#">My Account</a></li>
+                                            <li><a class="dropdown-item" href="product.html">Product</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+
+            </div>
+
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+    </header>
+
+
+
+
+
+
+
+    <main>
+
+        <section id="page-title">
+
+            <div class="container ">
+
+                <div class="row">
+
+                    <div class="col-lg-6">
+
+                        <div class="contact">
+                            <h4>BLOG LIST</h4>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="content">
+
+                            <li class="title">
+                                <a href="home.html">HOME</a>
+                            </li>
+                            <li>/</li>
+                            <li>BLOG LIST</li>
+
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <section id="blog-list">
+
+            <div class="container mt-5">
+
+                <div class="row">
+
+                    <div class="main-blog">
+
+                        <div class="col-lg-4">
+
+                            <div class="single-blog-list">
+
+                                <div class="img">
+                                    <a href="">
+                                        <img src="./assets/img/blog/b1.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="img">
+                                    <a href="">
+                                        <img src="./assets/img/blog/b1.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <div class="img">
+                                    <a href="">
+                                        <img src="./assets/img/blog/b1.jpg" alt="">
+                                    </a>
+                                </div>
+
+
+
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-4">
+
+                            <div class="info-text"> 
+
+                                <div class="text-box">
+                                    <a href="">
+                                        <h4> Our Outstanding Services </h4>
+                                    </a>
+    
+                                </div>
+    
+                                <ul class="icons">
+                                    <li><i class="fa-regular fa-clock"></i> Aug 21, 2015 </li>
+                                    <li><i class="fa-solid fa-user"></i> Marc Spenser </li>
+                                    <li><i class="fa-solid fa-comment-dots"></i> 05 Comments </li>
+                                </ul>
+    
+                                <p>Aenean ligula nibh, molestie id viverra a, dapibus at dolor. In iaculis viverra neque
+                                    Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business
+                                    orci
+                                    ultrices venenatis mauris. It is a long established fact that a reader will be
+                                    distracted.
+                                </p>
+
+
+
+                            </div>
+
+
+                            <div class="info-text"> 
+
+                                <div class="text-box">
+                                    <a href="">
+                                        <h4> Our Outstanding Services </h4>
+                                    </a>
+    
+                                </div>
+    
+                                <ul class="icons">
+                                    <li><i class="fa-regular fa-clock"></i> Aug 21, 2015 </li>
+                                    <li><i class="fa-solid fa-user"></i> Marc Spenser </li>
+                                    <li><i class="fa-solid fa-comment-dots"></i> 05 Comments </li>
+                                </ul>
+    
+                                <p>Aenean ligula nibh, molestie id viverra a, dapibus at dolor. In iaculis viverra neque
+                                    Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business
+                                    orci
+                                    ultrices venenatis mauris. It is a long established fact that a reader will be
+                                    distracted.
+                                </p>
+
+
+
+                            </div>
+
+
+
+
+                            <div class="info-text"> 
+
+                                <div class="text-box">
+                                    <a href="">
+                                        <h4> Our Outstanding Services </h4>
+                                    </a>
+    
+                                </div>
+    
+                                <ul class="icons">
+                                    <li><i class="fa-regular fa-clock"></i> Aug 21, 2015 </li>
+                                    <li><i class="fa-solid fa-user"></i> Marc Spenser </li>
+                                    <li><i class="fa-solid fa-comment-dots"></i> 05 Comments </li>
+                                </ul>
+    
+                                <p>Aenean ligula nibh, molestie id viverra a, dapibus at dolor. In iaculis viverra neque
+                                    Benenatis mauris Vestibulum ante ipsum primis in industry, logistics, finance, business
+                                    orci
+                                    ultrices venenatis mauris. It is a long established fact that a reader will be
+                                    distracted.
+                                </p>
+
+
+
+                            </div>
+
+
+
+                          
+
+                       
+
+
+
+                        </div>
+
+                        <div class="col-lg-4">
+
+                            <div class="sidebar">
+
+                                <div class="blog-sidebar">
+                                    <div class="search">
+                                        <input type="search" placeholder="Search...">
+                                    </div>
+
+                                    <div class="title">
+                                        <h4>Latest News</h4>
+                                    </div>
+
+                                    <div class="_line">
+
+                                    </div>
+
+                                    <div class="line_">
+
+                                    </div>
+
+                                    <ul>
+                                        <li>
+                                            <div class="img">
+                                                <img src="./assets/img/blog/b1.jpg" alt="">
+                                            </div>
+
+                                            <div class="text">
+
+                                                <h5>
+                                                    <a href="">How To Reduce Financial Stress</a>
+                                                </h5>
+                                                <span>02 Dec.</span>
+
+                                            </div>
+
+                                        </li>
+
+                                        <li>
+
+                                            <div class="img">
+                                                <img src="./assets/img/blog/b1.jpg" alt="">
+                                            </div>
+
+                                            <div class="text">
+
+                                                <h5>
+                                                    <a href="">What Makes A Financial Website Successful? </a>
+                                                </h5>
+                                                <span>02 Dec.</span>
+
+                                            </div>
+
+                                        </li>
+
+
+
+                                        <li>
+
+                                            <div class="img">
+                                                <img src="./assets/img/blog/b1.jpg" alt="">
+                                            </div>
+
+                                            <div class="text">
+
+                                                <h5>
+                                                    <a href="">What Makes A Financial Service’s Website Successful? </a>
+                                                </h5>
+                                                <span>02 Dec.</span>
+
+                                            </div>
+
+                                        </li>
+
+                                    </ul>
+
+
+
+                                    <div class="post-widget">
+
+                                        <div class="title">
+                                            <h4>Text widget</h4>
+                                        </div>
+
+                                        <div class="_line">
+
+                                        </div>
+
+                                        <div class="line_">
+
+                                        </div>
+
+                                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                            dolore que laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                                            veritatis et quasi arch itecto beatae vitae dict eaque ipsa quae.</p>
+
+                                    </div>
+
+
+                                    <div class="post-widget">
+
+                                        <div class="title">
+                                            <h4>Tags widget</h4>
+                                        </div>
+
+                                        <div class="_line">
+
+                                        </div>
+
+                                        <div class="line_">
+
+                                        </div>
+
+                                        <ul>
+
+                                            <div class="list">
+                                                <li>
+                                                    <a href="">Insurance</a>
+                                                </li>
+    
+                                                <li>
+                                                    <a href="">Investments</a>
+                                                </li>
+                                            </div>
+
+                                            <div class="list">
+                                                <li>
+                                                    <a href="">tax plans</a>
+                                                </li>
+    
+                                                <li>
+                                                    <a href="">Mutual funds</a>
+                                                </li>
+                                            </div>
+
+                                            <div class="list">
+
+                                                <li>
+                                                    <a href="">Retirement plans</a>
+                                                </li>
+    
+                                                <li>
+                                                    <a href="">Busniess plans</a>
+                                                </li>
+                                            </div>
+                                           
+
+                                           
+
+                                        </ul>
+
+
+                                    </div>
+
+
+                                </div>
+
+                            </div>
+
+
+
+                        </div>
+
+
+                      
+
+                    </div>
+
+                </div>
+
+        </section>
+
+    </main>
+
+
+
+
+    <footer>
+        <section id="footer">
+
+            <div class="container mt-5">
+
+                <div class="row">
+
+
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+
+                        <div class="logo-footer ">
+
+                            <div class="footer-about">
+
+                                <a href=""><img src="./assets/img/Home/logo/logo-02-01.png" alt=""></a>
+
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada
+                                    fringilla
+                                    sem,
+                                    at dictum lectus ultricies quis. Etiam eu bibendum orci. Aliquam erat volutpat.
+                                </p>
+                                <a href="">MORE ABOUT US</a>
+
+                            </div>
+                            <div class="services">
+
+                                <h5 class="h5">Services</h5>
+
+                                <ul>
+                                    <li><a href=""></a>Hotel Growth</li>
+                                    <li><a href=""></a>Hotel Lean</li>
+                                    <li><a href=""></a>Financial Planning</li>
+                                    <li><a href=""></a>Insurance Consulting</li>
+                                    <li><a href=""></a>Retirenment Planing</li>
+                                    <li><a href=""></a>Tax Planing</li>
+
+                                </ul>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="col-lg-6 col-md-12 col-sm-12">
+
+                        <div class="subscribe-address-info">
+                            <div class="subscribe">
+
+                                <h5>Subscribe Newsletter</h5>
+                                <p>Get latest updates and offers.</p>
+                                <input type="email" placeholder="Enter your email address">
+                                <button type="submit" class="btn">SUBSCRIBE US</button>
+
+                            </div>
+
+
+                            <div class="contact-info">
+
+                                <h5>Contact Us</h5>
+
+
+
+
+
+                                <div class="address">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p>Apple St, New York, NY 10012, USA</p>
+
+                                </div>
+
+                                <div class="telnumber">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <p>( 018) 65 524 8503 / (125) 954 7854</p>
+
+                                </div>
+
+                                <div class="message">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <p>contact@lamarena.com</p>
+                                </div>
+
+
+                                <div class="socials">
+
+                                    <ul class="socials-inline">
+                                        <li><a href=""><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+                                        <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                                        <li><a href=""><i class="fa-brands fa-google-plus-g"></i></a></li>
+
+                                    </ul>
+
+                                </div>
+
+
+
+
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+        integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+    <script
+        src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
+    <script src="https://kit.fontawesome.com/09a7df35a3.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/common.js"></script>  
+
+    
+</body>
+</html>

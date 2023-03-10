@@ -1,0 +1,267 @@
+main #page-title {
+  padding: 20px 0;
+  border-bottom: 1px solid #f3f3f3;
+}
+main #page-title .contact h4 {
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+}
+main #page-title .content {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+main #page-title .content li {
+  list-style: none;
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+}
+main #page-title .content li a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  font-size: 14px;
+}
+main #page-title .content .about-us {
+  display: flex;
+}
+main #billing-details .billing-details {
+  /* form starting stylings ------------------------------- */
+  /* LABEL ======================================= */
+  /* active state */
+  /* BOTTOM BARS ================================= */
+  /* active state */
+  /* HIGHLIGHTER ================================== */
+  /* active state */
+  /* ANIMATIONS ================ */
+}
+main #billing-details .billing-details .title h2 {
+  font-size: 36px;
+  text-transform: capitalize;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  color: #383838;
+  font-weight: 700;
+}
+main #billing-details .billing-details h2 small {
+  font-weight: normal;
+  color: #888;
+  display: block;
+}
+main #billing-details .billing-details .footer {
+  text-align: center;
+}
+main #billing-details .billing-details .footer a {
+  color: red;
+}
+main #billing-details .billing-details .group {
+  position: relative;
+  margin-bottom: 45px;
+}
+main #billing-details .billing-details input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #757575;
+}
+main #billing-details .billing-details input:focus {
+  outline: none;
+}
+main #billing-details .billing-details label {
+  color: #999;
+  font-size: 15px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+main #billing-details .billing-details input:focus ~ label,
+main #billing-details .billing-details input:valid ~ label {
+  top: -7px;
+  font-size: 12px;
+  color: red;
+}
+main #billing-details .billing-details .bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+main #billing-details .billing-details .bar:before,
+main #billing-details .billing-details .bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: red;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+main #billing-details .billing-details .bar:before {
+  left: 50%;
+}
+main #billing-details .billing-details .bar:after {
+  right: 50%;
+}
+main #billing-details .billing-details input:focus ~ .bar:before,
+main #billing-details .billing-details input:focus ~ .bar:after {
+  width: 0%;
+}
+main #billing-details .billing-details .highlight {
+  position: absolute;
+  height: 60%;
+  width: 80px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+main #billing-details .billing-details input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+@keyframes inputHighlighter {
+  from {
+    background: #5264AE;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+main #billing-details .billing-details .input {
+  margin-top: 30px;
+}
+main #billing-details .billing-details .input input {
+  width: 290px;
+}
+main #billing-details .billing-details .add-info h3 {
+  margin: 0;
+  font-size: 28px;
+  text-align: left;
+  color: #383838;
+  font-weight: 500;
+}
+main #billing-details .billing-details .add-info p {
+  margin: 0;
+  color: #777 !important;
+}
+main #billing-details .billing-details button {
+  background-color: #EF6C00;
+  color: white;
+  width: 156.59px;
+  height: 46px;
+  font-weight: 500;
+}
+main #billing-details .billing-details .post-content input {
+  margin-top: 20px;
+  padding: 30px;
+}
+main #billing-details .order-box {
+  border: 1px solid #d9d9d9;
+  padding: 30px;
+}
+main #billing-details .order-box .title .content {
+  position: relative;
+  padding-bottom: 25px;
+  color: #444;
+  font-weight: 500;
+  font-size: 20px;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+}
+main #billing-details .order-box .title .content span {
+  font-size: 20px;
+  font-weight: 500;
+}
+main #billing-details .order-box .title .content .total {
+  font-size: 14px;
+  position: relative;
+  width: 35%;
+  float: right;
+}
+main #billing-details .order-box .title ul {
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+main #billing-details .order-box .title ul li {
+  padding-bottom: 25px;
+}
+main #billing-details .order-box .title .radio {
+  display: flex;
+  align-items: center;
+}
+main #billing-details .order-box .title .radio input {
+  width: 20px;
+  height: 20px;
+}
+main #billing-details .order-box .title .radio label {
+  color: #848484;
+  font-weight: 400;
+  margin-left: 8px;
+}
+main #billing-details .order-box .title .subtotal {
+  display: flex;
+}
+main #billing-details .order-box .title .subtotal li {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  line-height: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+main #billing-details .order-box .title .subtotal span {
+  position: relative;
+  font-size: 20px;
+  line-height: 20px;
+  color: #f33927;
+  font-weight: 400;
+  width: 35%;
+  float: right;
+}
+main #billing-details .order-box .title .button {
+  margin-top: 20px;
+}
+main #billing-details .order-box .title .button button {
+  background-color: #EF6C00;
+  color: white;
+  width: 154.57px;
+  height: 46px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+main #billing-details .total {
+  display: flex;
+}
+main #billing-details .total li {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  line-height: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+main #billing-details .total span {
+  position: relative;
+  font-size: 20px;
+  line-height: 20px;
+  color: #f33927;
+  font-weight: 400;
+  width: 35%;
+  float: right;
+}/*# sourceMappingURL=checkout.css.map */
