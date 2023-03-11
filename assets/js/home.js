@@ -86,38 +86,7 @@ $(document).ready(function () {
   });
 
 
-  //gozu legv edir duzeldecem
-
-  // let iconsWishlist = document.querySelectorAll("#card .swiper-slide");
-
-  // iconsWishlist.forEach(iconWishlist => {
-
-  //   iconWishlist.addEventListener("mouseover",function(){
-
-  //     let icons = document.querySelector(".icon-wishlist")
-
-  //     icons.classList.remove("d-none")
-
-
-
-  //   })
-
-  // });
-
-  // iconsWishlist.forEach(iconWishlist => {
-
-  //   iconWishlist.addEventListener("mouseleave",function(){
-
-  //     let icons = document.querySelector("#card .mySwipers .swipers  .swiper-slide .card-prodact .icon-wishlist ")
-
-
-  //     icons.classList.add("d-none")
-
-
-
-  //   })
-
-  // });
+  
 
 
 
@@ -473,35 +442,81 @@ function getBasketDatas() {
 
 
 
-//  delete
-
-// function deleteProduct(id) {
-//   products = products.filter(m => m.id != id);
-//   localStorage.setItem("basket", JSON.stringify(products));
-
-// }
-
-// let deleteIcons = document.querySelectorAll(".delete-btn");
-
-
-// deleteIcons.forEach(icon => {
-
-//   icon.addEventListener("click", function () {
-//     let id = parseInt(this.parentNode.parentNode.getAttribute("data-id"));
-//     deleteProduct(id);
-//     // this.parentNode.parentNode.remove();
-//     if (products.length == 0) {
-//       localStorage.removeItem("basket")
-//       // showAlert();
-
-//     }
-
-//     getBasketCount(products);
-//     getBasketPrice(products)
 
 
 
 
+// ad wishtlist
+
+
+let cardWishlist = document.querySelectorAll("#card-prodacts-carousel .cardwishlist");
+
+
+
+let likeLroducts = [];
+
+if (localStorage.getItem("wishtlist") != null) {
+  likeLroducts = JSON.parse(localStorage.getItem("wishtlist"));
+}
+
+
+
+
+cardWishlist.forEach(btn => {
+  btn.addEventListener("click", function (e) {
+
+    e.preventDefault();
+
+    let prodoctImage = this.parentNode.parentNode.previousElementSibling.firstElementChild.firstElementChild.getAttribute("src");
+
+    console.log(prodoctImage);
+
+
+    let productName = this.parentNode.parentNode.parentNode.nextElementSibling.firstElementChild.lastElementChild.innerText;
+
+    console.log(productName);
+    // let productDesc = this.previousElementSibling.previousElementSibling.innerText;
+    let productPrice = parseInt(this.parentNode.parentNode.parentNode.nextElementSibling.lastElementChild.previousElementSibling.previousElementSibling.innerText);
+
+    console.log(productPrice);
+    
+    let productId = parseInt(this.parentNode.parentNode.parentNode.parentNode.getAttribute("data-id"));
+
+    let existProduct = products.find(m => m.id == productId);
+
+    if (existProduct != undefined) {
+      existProduct.count += 1;
+      // existProduct.total =existProduct.price * existProduct.count
+
+    } else {
+
+      products.push({
+
+        id: productId,                             
+        name: productName,
+        img: prodoctImage,
+
+        price: productPrice,
+        count: 1,
+        // total: productPrice * 1
+
+      })
+    }
+
+
+
+
+
+
+
+   
+    getBasketPrice(products);
+    localStorage.setItem("basket", JSON.stringify(products));
+    
+    itemCountTotal(products);
+    getBasketDatas();
+    // getBasketCount(products);
+    
 
 
 
@@ -510,8 +525,17 @@ function getBasketDatas() {
 
 
 
-//   })
-// });
+
+
+
+
+
+
+  })
+
+
+});
+
 
 
 

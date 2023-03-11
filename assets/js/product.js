@@ -25,7 +25,7 @@ $('._slider').slick({
   infinite: false,
   slidesToShow: 3,
   slidesToScroll: 1,
-  prevArrow:'<i class="fa-solid fa-chevron-left"></i>',
+  prevArrow:'<i class="fa-solid fa-chevron-left  slider-icon"></i>',
   nextArrow:'<i class="fa-solid fa-chevron-right"></i>'
 });
 
