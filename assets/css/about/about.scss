@@ -1,4 +1,3 @@
-
 //nav bar 
 
 .nav-bar {
@@ -21,6 +20,64 @@
 
 
 
+
+    ._usd {
+
+        margin-top: 14px;
+
+
+        .navbar-nav {
+
+            & li .firsta {
+
+
+                padding: 0px 16px !important;
+                color: #c3c3c3;
+                font-size: 14px !important;
+                font-weight: 600;
+                font-family: 'Poppins', sans-serif;
+                cursor: pointer;
+
+                & :hover {
+                    color: gray;
+                }
+
+
+
+            }
+        }
+
+
+        .dropdown-firstmenu {
+
+
+            & li {
+                width: 221px;
+                height: 48px;
+                padding: 10px 16px;
+                border: 0.5px dashed rgb(245, 241, 241);
+                border-top: none;
+                border-left: none;
+                border-right: none;
+                cursor: pointer;
+
+
+                span {
+                    background-color: #ef6c00;
+                    font-size: 11px;
+                    font-weight: 400;
+                    color: #fff;
+                    padding-top: 2px;
+                    padding-bottom: 2px;
+                    padding-left: 3px;
+                    padding-right: 3px;
+                    font-weight: 400;
+
+                }
+            }
+        }
+
+    }
 
     .nav-right-icon {
 
@@ -52,9 +109,14 @@
 
     }
 
+    .nav-usd-flag {
+        display: flex;
+    }
 
 
     .flag {
+
+
 
         .divider {
             margin: 1px !important;
@@ -98,7 +160,7 @@
     width: 100%;
     height: 85px;
 
-    .Sophia {
+    .sophia {
         height: 80px;
 
         display: flex;
@@ -123,6 +185,8 @@
 
 
         input {
+            border: none;
+            outline: none;
             height: 35px;
             width: 29rem;
             border-top-left-radius: 3px !important;
@@ -188,7 +252,7 @@
                 display: none;
                 left: 3px;
                 position: absolute;
-                display: block;
+                // display: block;
                 top: 40px;
                 border-top-right-radius: 4px;
                 border-bottom-left-radius: 4px;
@@ -198,30 +262,30 @@
                 overflow: auto;
                 background-color: white;
 
-                .subtotal-basket{
+                .subtotal-basket {
                     border-top: 1px solid #C3C3C3;
                     width: 249px;
                     height: 59px;
                     display: flex;
                     justify-content: space-between;
-                    
+
                     margin-left: 20px;
                     padding-top: 10px;
-                    
-                    .basket-card-total{
-                        
-                        span{
+
+                    .basket-card-total {
+
+                        span {
                             font-weight: 400;
                         }
                     }
-                    
 
-                    
+
+
 
                 }
 
 
-              
+
 
                 .table>:not(caption)>*>* {
                     padding: 0.5rem 0.5rem;
@@ -231,7 +295,7 @@
                 }
 
 
-               
+
 
 
                 #check-card {
@@ -239,26 +303,26 @@
                     color: black;
                     font-weight: 600;
                 }
-                
-                .check{
-                   display: flex;
-                   justify-content: space-between;
-                   border-top: 5px solid #C3C3C3;
-                   padding: 20px;
-                   
-                   
-                  .item-count{
-                    margin-left: 114px;
-                    font-weight: 600;
 
-                  }
+                .check {
+                    display: flex;
+                    justify-content: space-between;
+                    border-top: 5px solid #C3C3C3;
+                    padding: 20px;
 
-                  span{
-                    font-weight: 600;
-                  }
+
+                    .item-count {
+                        margin-left: 114px;
+                        font-weight: 600;
+
+                    }
+
+                    span {
+                        font-weight: 600;
+                    }
                 }
 
-                .line-basket{
+                .line-basket {
 
                     height: 1px;
                     width: 250px;
@@ -268,14 +332,14 @@
 
 
                 .table {
-                   
 
-                  
+
+
 
                     .table-body {
 
-                    
-                       
+
+
 
 
                         tr {
@@ -299,7 +363,7 @@
                                 margin-top: 30px;
                                 margin-left: -219px;
                                 font-weight: 600;
-                               
+
                             }
 
                             .name {
@@ -331,7 +395,7 @@
                 }
 
 
-                
+
 
                 .total-price {
 
@@ -469,9 +533,10 @@
             li {
                 width: 100px !important;
 
-                 transition: 0.3s;
+                transition: 0.3s;
+
                 a {
-                    
+
                     font-size: 17px;
                     font-weight: bold;
                 }
@@ -1076,22 +1141,22 @@
         .single-team-member {
             width: 295px;
             // height: 365.88px;
-            
+
             &:hover {
                 img {
                     opacity: 0.5;
                 }
 
-                .social{
+                .social {
                     transform: translateY(-65px);
                 }
 
-                .text{
-                    h4{
+                .text {
+                    h4 {
                         color: white;
                     }
 
-                    p{
+                    p {
                         color: white;
                     }
 
@@ -1119,8 +1184,9 @@
                 justify-content: space-evenly;
                 background-color: #4050b5;
                 transition: all 0.4s;
-                a{
-                    i{
+
+                a {
+                    i {
                         color: white;
                     }
                 }
@@ -1138,7 +1204,7 @@
                 h4 {
                     margin: 0;
                     font-size: 18px;
-                    
+
                     font-weight: 500;
                 }
 

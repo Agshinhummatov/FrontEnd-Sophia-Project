@@ -23,6 +23,23 @@ $(document).ready(function () {
   });
 
 
+  //usd
+
+  let europrice = document.querySelector("#nav  ._usd .europrice");
+
+    europrice.addEventListener("click", function () {
+        let euroPriceText = this.firstElementChild.innerText
+
+        this.parentNode.previousElementSibling.innerText = euroPriceText
+    })
+
+    let usdprice = document.querySelector("#nav ._usd .usdprice");
+
+    usdprice.addEventListener("click", function () {
+        let usdPriceText = this.firstElementChild.innerText
+
+        this.parentNode.previousElementSibling.innerText = usdPriceText
+    })
 
 
 
@@ -68,8 +85,8 @@ $(document).ready(function () {
   //card carusel
 
   var swiper = new Swiper(".mySwipers", {
-    loop: true,
-    slidesPerView: 4,
+    
+    slidesPerView: 7,
     spaceBetween: 30,
     centeredSlides: true,
     pagination: {
@@ -449,59 +466,61 @@ function getBasketDatas() {
 // ad wishtlist
 
 
-let cardWishlist = document.querySelectorAll("#card-prodacts-carousel .cardwishlist");
+// let cardWishlist = document.querySelectorAll("#card-prodacts-carousel .cardwishlist");
 
 
 
-let likeLroducts = [];
+// let likeProducts = [];
 
-if (localStorage.getItem("wishtlist") != null) {
-  likeLroducts = JSON.parse(localStorage.getItem("wishtlist"));
-}
-
-
+// if (localStorage.getItem("wishtlist") != null) {
+//   likeProducts = JSON.parse(localStorage.getItem("wishtlist"));
+// }
 
 
-cardWishlist.forEach(btn => {
-  btn.addEventListener("click", function (e) {
-
-    e.preventDefault();
-
-    let prodoctImage = this.parentNode.parentNode.previousElementSibling.firstElementChild.firstElementChild.getAttribute("src");
-
-    console.log(prodoctImage);
 
 
-    let productName = this.parentNode.parentNode.parentNode.nextElementSibling.firstElementChild.lastElementChild.innerText;
+// cardWishlist.forEach(btn => {
+//   btn.addEventListener("click", function (e) {
 
-    console.log(productName);
-    // let productDesc = this.previousElementSibling.previousElementSibling.innerText;
-    let productPrice = parseInt(this.parentNode.parentNode.parentNode.nextElementSibling.lastElementChild.previousElementSibling.previousElementSibling.innerText);
+//     e.preventDefault();
 
-    console.log(productPrice);
+//     let prodoctImage = this.parentNode.parentNode.previousElementSibling.firstElementChild.firstElementChild.getAttribute("src");
+
     
-    let productId = parseInt(this.parentNode.parentNode.parentNode.parentNode.getAttribute("data-id"));
 
-    let existProduct = products.find(m => m.id == productId);
 
-    if (existProduct != undefined) {
-      existProduct.count += 1;
-      // existProduct.total =existProduct.price * existProduct.count
+//     let productName = this.parentNode.parentNode.parentNode.nextElementSibling.firstElementChild.lastElementChild.innerText;
 
-    } else {
+    
+//     // let productDesc = this.previousElementSibling.previousElementSibling.innerText;
+//     let productPrice = parseInt(this.parentNode.parentNode.parentNode.nextElementSibling.lastElementChild.previousElementSibling.previousElementSibling.innerText);
 
-      products.push({
+   
+    
+//     let productId = parseInt(this.parentNode.parentNode.parentNode.parentNode.parentNode.getAttribute("data-id"));
 
-        id: productId,                             
-        name: productName,
-        img: prodoctImage,
+   
 
-        price: productPrice,
-        count: 1,
-        // total: productPrice * 1
+//     let existProduct = likeProducts.find(m => m.id == productId);
 
-      })
-    }
+//     if (existProduct != undefined) {
+//       existProduct.count += 1;
+//       // existProduct.total =existProduct.price * existProduct.count
+
+//     } else {
+
+//       likeProducts.push({
+
+//         id: productId,                             
+//         name: productName,
+//         img: prodoctImage,
+
+//         price: productPrice,
+//         count: 1,
+//         // total: productPrice * 1
+
+//       })
+//     }
 
 
 
@@ -510,12 +529,12 @@ cardWishlist.forEach(btn => {
 
 
    
-    getBasketPrice(products);
-    localStorage.setItem("basket", JSON.stringify(products));
+//     // getBasketPrice(products);
+//     localStorage.setItem("basket", JSON.stringify(likeProducts));
     
-    itemCountTotal(products);
-    getBasketDatas();
-    // getBasketCount(products);
+//     // itemCountTotal(products);
+//     // getBasketDatas();
+//     // getBasketCount(products);
     
 
 
@@ -531,10 +550,10 @@ cardWishlist.forEach(btn => {
 
 
 
-  })
+//   })
 
 
-});
+// });
 
 
 
