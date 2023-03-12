@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
     <link
         href="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.css"
         rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/basket-cart/basket-cart.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/wishtlist/wishtlist.css">
+    <title>Wishtlist</title>
 </head>
-
 <body>
+    
+
 
     <header>
         <section id="nav">
@@ -291,6 +290,9 @@
 
     </header>
 
+     
+
+
 
     <main>
 
@@ -305,7 +307,7 @@
                     <div class="col-lg-6">
 
                         <div class="contact">
-                            <h4>Cart</h4>
+                            <h4>Wishtlist</h4>
                         </div>
 
                     </div>
@@ -318,7 +320,7 @@
                                 <a href="home.html">HOME</a>
                             </li>
                             <li>/</li>
-                            <li>Cart</li>
+                            <li>Wishtlist</li>
 
                         </div>
                     </div>
@@ -356,11 +358,11 @@
                         <thead>
                             <tr>
                                 <th scope="col" class="thproduct">Product</th>
-                                <th scope="col">Name</th>
-                                <th scope="col">Price</th>
-                                <th scope="col">Quantity</th>
-                                <th scope="col">Total</th>
-                                <th scope="col">Action</th>
+                                <th scope="col" class="thname">Name</th>
+                                <th scope="col" class="thprice">Price</th>
+                                <th scope="col"><button type="button" class="btn btn-danger clear-all">Clear All</button></th>
+                                <!-- <th scope="col">Total</th>
+                                <th scope="col">Action</th> -->
                             </tr>
                         </thead>
 
@@ -397,11 +399,11 @@
 
                         <div class="grand-total">
 
-                            <span class="total">Grand total:</span>
+                            <!-- <span class="total">Grand total:</span>
 
                             <a href="home.html">
                                 <button type="button">Proceed to Checkout</button>
-                            </a>
+                            </a> -->
                         </div>
 
 
@@ -465,6 +467,8 @@
 
 
     </main>
+
+
 
     <footer>
         <section id="footer">
@@ -594,14 +598,14 @@
         crossorigin="anonymous"></script>
     <script
         src="https://cdn.rawgit.com/mdehoog/Semantic-UI/6e6d051d47b598ebab05857545f242caf2b4b48c/dist/semantic.min.js"></script>
-
-
-
     <script src="https://kit.fontawesome.com/09a7df35a3.js" crossorigin="anonymous"></script>
     
-    <script src="./assets/js/basket-cart.js"></script>
-
+    <!-- <script src="./assets/js/basket-cart.js"></script> -->
+    <!-- <script src="./assets/js/common.js"></script> -->
+    <script src="./assets/js/wishtlist.js"></script>
 
 </body>
 
+
+</body>
 </html>

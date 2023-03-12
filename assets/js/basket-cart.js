@@ -22,23 +22,24 @@ $(document).ready(function () {
     });
 
 
-    //usd
+//convert usd 
 
-//   let europrice = document.querySelector("#nav  ._usd .europrice");
 
-//   europrice.addEventListener("click", function () {
-//       let euroPriceText = this.firstElementChild.innerText
+let europrice = document.querySelector("#nav  ._usd .europrice");
 
-//       this.parentNode.previousElementSibling.innerText = euroPriceText
-//   })
+europrice.addEventListener("click", function () {
+    let euroPriceText = this.firstElementChild.innerText
 
-//   let usdprice = document.querySelector("#nav ._usd .usdprice");
+    this.parentNode.previousElementSibling.innerText = euroPriceText
+})
 
-//   usdprice.addEventListener("click", function () {
-//       let usdPriceText = this.firstElementChild.innerText
+let usdprice = document.querySelector("#nav ._usd .usdprice");
 
-//       this.parentNode.previousElementSibling.innerText = usdPriceText
-//   })
+usdprice.addEventListener("click", function () {
+    let usdPriceText = this.firstElementChild.innerText
+
+    this.parentNode.previousElementSibling.innerText = usdPriceText
+})
 
 
 
@@ -62,6 +63,7 @@ let getBasketProductList = document.querySelector(".basket-number");
 });
 
 
+//basket
 
 
 let tableBody = document.querySelector("tbody")
@@ -85,24 +87,24 @@ function getBasketDatas() {
             tableBody.innerHTML += `
             <tr data-id ="${product.id}">
             <td>
-            <img src="${product.img}" alt="">
+            <img src="${product.img}" alt="" class ="images-product">
             </td>
-            <td>${product.name}</td>
+            <td class ="product-name">${product.name}</td>
 
 
             
             
-            <td>$${product.price}</td>
+            <td class = "price">${product.price}</td>
 
 
-            <td><span class="minus">-</span><span>${product.count}</span><span class="plus">+</span></td>
+            <td><span class="minus">-</span><span class ="count">${product.count}</span><span class="plus">+</span></td>
 
-            <td>$${product.price * product.count}</td>
+            <td class="total-price-basket">${product.price * product.count}</td>
             
 
             <td>
 
-            <i class="fa-solid fa-xmark delete-btn" style="color: black; cursor: pointer;"></i>
+            <i class="fa-solid fa-xmark delete-btn " style="color: black; cursor: pointer;"></i>
             </td>
 
 
@@ -142,9 +144,7 @@ function showAlert(e) {
     document.querySelector(".info-basket").classList.add("d-none");
     document.querySelector(".basket-button").classList.remove("basket-btn");
 
-    //eyer data yoxdusa bos Total sozunu sil
-    // document.querySelector("#basket .clear .clear-button").classList.add("d-none")
-    // e.preventDefault();
+   
 }
 
 
@@ -230,8 +230,7 @@ deleteIcons.forEach(icon => {
 function showTotalPrice() {
     if (products != null) {
         let tittle = document.querySelector(".total");
-        // tittle.classList.remove("d-none");
-        // tittle.nextElementSibling.classList.remove("d-none");
+        
 
         let sum = 0;
         for (const product of products) {
@@ -256,10 +255,9 @@ for (const minusIcon of minusIcons) {
                     return;
                 }
                 minusIcon.nextElementSibling.innerText--;
-                // let nativePrice = product.price/product.count; 
+                
                 product.count--;
-                // product.price = nativePrice*product.count;
-                // res = nativePrice * product.count;
+              
                 minusIcon.parentNode.nextElementSibling.innerText = product.price * product.count;
             }
         }
@@ -287,16 +285,16 @@ for (const plusIcon of plusIcons) {
 
 
 
-                product.count++;                                      //mehsulun sayini artirdiqca...
+                product.count++;                                      
 
                 plusIcon.parentNode.nextElementSibling.innerText = product.price * product.count;
             }
         }
 
-        localStorage.setItem("basket", JSON.stringify(products));  //en sonda yene locala yazdiririq neticeni
+        localStorage.setItem("basket", JSON.stringify(products));  
 
         showTotalPrice()
         getBasketCount(products)
-        getBasketPrice(products)   //totalda gosteririk                                                          
+        getBasketPrice(products)                                                          
     })
 }

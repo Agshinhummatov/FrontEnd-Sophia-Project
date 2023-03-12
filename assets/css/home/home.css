@@ -1113,4 +1113,130 @@ body {
   font-size: 15px;
   line-height: 32px;
   color: #333;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgb(94, 92, 92);
+  opacity: 0.5;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.modal {
+  display: flex;
+  width: 840px;
+  height: 500px;
+  background-color: white;
+  z-index: 5;
+  position: fixed;
+  top: 150px;
+  left: 350px;
+  transition: all 0.02s;
+  opacity: 1;
+  border: 1px solid black;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+}
+.modal .close {
+  color: red;
+  font-size: 27px;
+  position: left;
+  position: absolute;
+  left: 790px;
+}
+.modal .img {
+  margin-top: 10px;
+  width: 420px;
+  height: 460px;
+  background-color: white;
+}
+.modal .img img {
+  width: 100%;
+  height: 100%;
+}
+.modal .modalproductinfo {
+  width: 340px;
+  background-color: white;
+}
+.modal .modalproductinfo h2 {
+  margin-top: 15px;
+  font-size: 36px;
+  color: #383838;
+  font-weight: 700;
+}
+.modal .modalproductinfo .oldprice {
+  margin-bottom: 5px;
+}
+.modal .modalproductinfo .oldprice del {
+  margin-right: 10px;
+}
+.modal .modalproductinfo .oldprice del span {
+  font-size: 18px;
+  color: #777;
+  font-weight: 500;
+}
+.modal .modalproductinfo .oldprice span {
+  color: #f33927;
+  font-size: 25px;
+  font-weight: 500;
+}
+.modal .modalproductinfo .discountprice {
+  font-size: 26px;
+  color: #383838;
+  font-weight: 500;
+  border: 1px dashed #ddd;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  padding-bottom: 10px;
+}
+.modal .modalproductinfo .productdetails {
+  border: 1px dashed #ddd;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+.modal .modalproductinfo .stockavalibility {
+  margin-top: 10px;
+}
+.modal .modalproductinfo .stockavalibility .avalib {
+  color: #777777;
+  font-size: 14px;
+}
+.modal .modalproductinfo .stockavalibility .instock {
+  margin-left: 5px;
+  color: rgba(0, 0, 0, 0.8705882353);
+  font-weight: 500;
+  font-size: 14px;
+}
+.modal .modalproductinfo .stockavalibility span {
+  color: #777777;
+  font-size: 14px;
+}
+.modal .modalproductinfo .stockavalibility input {
+  margin-top: 10px;
+  width: 80px;
+  text-align: center;
+  background-color: #eee;
+  height: 35px;
+  border: 1px solid #e5e5e5;
+  outline: none;
+}
+.modal .modalproductinfo .stockavalibility .fa-minus {
+  margin-left: 10px;
+}
+.modal .modalproductinfo .stockavalibility .cartmini {
+  margin-left: 135px;
+}
+.modal .modalproductinfo .stockavalibility .eyesss {
+  margin-left: 20px;
 }/*# sourceMappingURL=home.css.map */

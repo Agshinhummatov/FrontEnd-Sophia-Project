@@ -18,7 +18,9 @@
 </head>
 <body>
 
+    
     <header>
+
         <section id="nav">
 
 
@@ -29,41 +31,66 @@
 
 
 
-                    <div class="col-5">
-
-                        <div class="_usd">
+                    <div class="col-5"> 
 
 
+                        <div class="nav-usd-flag">
 
 
-                        </div>
 
-                        <div class="flag">
+                            <div class="_usd">
 
-                            <div class="ui divider hidden "></div>
-                            <div class="ui search selection dropdown">
-                                <input type="hidden" name="country" id="country">
-                                <i class="dropdown icon"></i>
-                                <div class="default text"><i class="gb flag"></i>English</div>
-                                <div class="menu">
-                                    <div class="item" data-value="gb"><i class="gb flag"></i>English</div>
-                                    <div class="item" data-value="de"><i class="de flag"></i>German</div>
-                                    <div class="item" data-value="fr"><i class="fr flag"></i>French</div>
-                                    <div class="item" data-value="ru"><i class="ru flag"></i>Russia</div>
-                                    <div class="item" data-value="tr"><i class="tr flag"></i>Turkey</div>
-                                    <div class="item" data-value="az"><i class="az flag"></i>Azerbaijan</div>
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle firsta" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            USD
+                                        </a>
+                                        <ul class="dropdown-menu  dropdown-firstmenu">
+                                            <li class="usdprice"><span>USD</span></li>
+                                            <li class="europrice"><span>EUR</span></li>
+                                        </ul>
+                                    </li>
 
-                                </div>
+                                </ul>
+
+
+
+
+
+
                             </div>
 
-                            <div class="ui divider hidden"></div>
+                            <div class="flag">
+
+                                <div class="ui divider hidden "></div>
+                                <div class="ui search selection dropdown" style="min-width: 4em !important;">
+                                    <input type="hidden" name="country" id="country" style="width: 70%;">
+                                    <i class="dropdown icon"></i>
+                                    <div class="default text" style="min-width: 4em !important;"><i
+                                            class="gb flag"></i>English</div>
+                                    <div class="menu" style="min-width: 200px !important; margin: 0 -76px!important;">
+                                        <div class="item" data-value="gb"><i class="gb flag"></i>English</div>
+                                        <div class="item" data-value="de"><i class="de flag"></i>German</div>
+                                        <div class="item" data-value="fr"><i class="fr flag"></i>French</div>
+                                        <div class="item" data-value="ru"><i class="ru flag"></i>Russia</div>
+                                        <div class="item" data-value="tr"><i class="tr flag"></i>Turkey</div>
 
 
+                                    </div>
+                                </div>
+
+                                <div class="ui divider hidden"></div>
+
+
+                            </div>
 
                         </div>
 
-
                     </div>
+
+
+
 
                     <div class="col-3">
 
@@ -71,7 +98,7 @@
 
                     <div class="col-4 ">
                         <div class="nav-right-icon">
-                            <a href=""> <i class="fa-regular fa-heart"></i><span> WISHLIST</span></a>
+                            <a href="wishtlist.html"> <i class="fa-regular fa-heart"></i><span> WISHLIST</span></a>
 
 
 
@@ -80,7 +107,7 @@
                                 <span> COMPARE</span>
                             </a>
 
-                            <a href="">
+                            <a href="account.html">
                                 <i class="fa-solid fa-user"></i>
                                 <span> My Account</span>
                             </a>
@@ -116,7 +143,7 @@
 
                     <div class="col-2">
 
-                        <div class="Sophia">
+                        <div class="sophia">
                             <a href="home.html">
                                 <img src="./assets/img/Home/logo/logo-white.png" alt="">
                             </a>
@@ -179,16 +206,16 @@
 
 
                                     <table class="table table-bodys">
-                                        
+
 
                                         <div class="check">
-                                                     
+
                                             <a id="check-card" href="basket-cart.html"> CHECK CARD</a>
-                                            
+
                                             <div class="item-count"><span>0</span></div>
                                             <span class="item-basket">ITEM</span>
 
-                                            
+
                                         </div>
 
                                         <div class="line-basket">
@@ -219,10 +246,10 @@
 
 
                                     </table>
-                                          
-                                
-                                    
-                                    
+
+
+
+
                                     <div class="subtotal-basket">
                                         <div class="basket-card-total">
                                             <span>Subtotal:</span>
@@ -251,7 +278,7 @@
 
 
                                 <div class="sub-total">
-                                    
+
                                     <div>
                                         <i class="fa-solid fa-cart-shopping"></i>
                                     </div>
@@ -315,10 +342,10 @@
                                             Pages
                                         </a>
                                         <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">Wishlisht</a></li>
-                                            <li><a class="dropdown-item" href="#">Cart</a></li>
+                                            <li><a class="dropdown-item" href="wishtlist.html">Wishlisht</a></li>
+                                            <li><a class="dropdown-item" href="basket-cart.html">Cart</a></li>
                                             <li><a class="dropdown-item" href="basket-cart.html">Checkout</a></li>
-                                            <li><a class="dropdown-item" href="#">My Account</a></li>
+                                            <li><a class="dropdown-item" href="account.html">My Account</a></li>
                                             <li><a class="dropdown-item" href="product.html">Product</a></li>
                                         </ul>
                                     </li>
@@ -346,6 +373,8 @@
 
 
     </header>
+
+
 
 
     <main>

@@ -27,19 +27,19 @@ $(document).ready(function () {
 
   let europrice = document.querySelector("#nav  ._usd .europrice");
 
-    europrice.addEventListener("click", function () {
-        let euroPriceText = this.firstElementChild.innerText
+  europrice.addEventListener("click", function () {
+    let euroPriceText = this.firstElementChild.innerText
 
-        this.parentNode.previousElementSibling.innerText = euroPriceText
-    })
+    this.parentNode.previousElementSibling.innerText = euroPriceText
+  })
 
-    let usdprice = document.querySelector("#nav ._usd .usdprice");
+  let usdprice = document.querySelector("#nav ._usd .usdprice");
 
-    usdprice.addEventListener("click", function () {
-        let usdPriceText = this.firstElementChild.innerText
+  usdprice.addEventListener("click", function () {
+    let usdPriceText = this.firstElementChild.innerText
 
-        this.parentNode.previousElementSibling.innerText = usdPriceText
-    })
+    this.parentNode.previousElementSibling.innerText = usdPriceText
+  })
 
 
 
@@ -85,7 +85,7 @@ $(document).ready(function () {
   //card carusel
 
   var swiper = new Swiper(".mySwipers", {
-    
+
     slidesPerView: 7,
     spaceBetween: 30,
     centeredSlides: true,
@@ -103,7 +103,7 @@ $(document).ready(function () {
   });
 
 
-  
+
 
 
 
@@ -138,7 +138,7 @@ $(document).ready(function () {
   let getBasketProductList = document.querySelector(".basket-number");
 
 
-  
+
   let tableicon = document.querySelector(".info-basket");
 
 
@@ -205,7 +205,7 @@ cardBtns.forEach(btn => {
 
       products.push({
 
-        id: productId,                             
+        id: productId,
         name: productName,
         img: prodoctImage,
 
@@ -222,14 +222,14 @@ cardBtns.forEach(btn => {
 
 
 
-   
+
     getBasketPrice(products);
     localStorage.setItem("basket", JSON.stringify(products));
-    
+
     itemCountTotal(products);
     getBasketDatas();
     // getBasketCount(products);
-    
+
 
 
 
@@ -273,8 +273,8 @@ function getBasketPrice(arr) {
   document.querySelector("._total-price").innerText = "$" + sum + ".00"
 
   document.querySelector(".total-price-basket").innerText = "$" + sum + ".00"
- 
-  
+
+
 
 
 }
@@ -291,12 +291,13 @@ let totalItem = document.querySelector(".item-count")
 
 itemCountTotal(products);
 
-function itemCountTotal(products){
+function itemCountTotal(products) {
 
- 
 
-  totalItem.innerText =  products.length 
-  document.querySelector("sup").innerText = products.length 
+
+  totalItem.innerText = products.length
+  document.querySelector("sup").innerText = products.length
+
 
 }
 
@@ -305,17 +306,7 @@ function itemCountTotal(products){
 
 
 
-// function getBasketPrice(arr){
-//   let sum = 0;
-//   for (const item of arr) {
-//       sum += item.price
-//   }
 
-//   document.querySelector("._total-price").innerText =  "$" + sum +".00"
-
-// }
-
-// getBasketPrice(products)
 
 
 
@@ -377,10 +368,8 @@ function getBasketDatas() {
 
     }
 
-    // itemCountTotal(products);
-    // getBasketCount(products);
-    // getBasketPrice(products);
-    
+
+
 
     function deleteProduct(id) {
       products = products.filter(m => m.id != id);
@@ -394,7 +383,7 @@ function getBasketDatas() {
     deleteIcons.forEach(icon => {
 
       icon.addEventListener("click", function () {
-        
+
         let id = parseInt(this.parentNode.parentNode.getAttribute("data-id"));
         deleteProduct(id);
         this.parentNode.parentNode.remove();
@@ -404,11 +393,11 @@ function getBasketDatas() {
 
         }
 
-        
+
         // getBasketCount(products);
         getBasketPrice(products);
         itemCountTotal(products);
-       
+
 
 
 
@@ -433,26 +422,14 @@ function getBasketDatas() {
 
   } else {
 
-    // showAlert();
+
   }
 
 
 
 }
 
-// getBasketDatas()
 
-
-
-
-// function showAlert(e) {
-
-//   document.querySelector(".info-basket").classList.add("d-none");
-
-//   //eyer data yoxdusa bos Total sozunu sil
-//   // document.querySelector("#basket .clear .clear-button").classList.add("d-none")
-//   // e.preventDefault();
-// }
 
 
 
@@ -466,76 +443,68 @@ function getBasketDatas() {
 // ad wishtlist
 
 
-// let cardWishlist = document.querySelectorAll("#card-prodacts-carousel .cardwishlist");
+let cardWishlist = document.querySelectorAll("#card-prodacts-carousel .cardwishlist");
 
 
 
-// let likeProducts = [];
+let likeProducts = [];
 
-// if (localStorage.getItem("wishtlist") != null) {
-//   likeProducts = JSON.parse(localStorage.getItem("wishtlist"));
-// }
-
-
+if (localStorage.getItem("wishtlist") != null) {
+  likeProducts = JSON.parse(localStorage.getItem("wishtlist"));
+}
 
 
-// cardWishlist.forEach(btn => {
-//   btn.addEventListener("click", function (e) {
-
-//     e.preventDefault();
-
-//     let prodoctImage = this.parentNode.parentNode.previousElementSibling.firstElementChild.firstElementChild.getAttribute("src");
-
-    
 
 
-//     let productName = this.parentNode.parentNode.parentNode.nextElementSibling.firstElementChild.lastElementChild.innerText;
+cardWishlist.forEach(btn => {
+  btn.addEventListener("click", function (e) {
 
-    
-//     // let productDesc = this.previousElementSibling.previousElementSibling.innerText;
-//     let productPrice = parseInt(this.parentNode.parentNode.parentNode.nextElementSibling.lastElementChild.previousElementSibling.previousElementSibling.innerText);
+    e.preventDefault();
 
-   
-    
-//     let productId = parseInt(this.parentNode.parentNode.parentNode.parentNode.parentNode.getAttribute("data-id"));
-
-   
-
-//     let existProduct = likeProducts.find(m => m.id == productId);
-
-//     if (existProduct != undefined) {
-//       existProduct.count += 1;
-//       // existProduct.total =existProduct.price * existProduct.count
-
-//     } else {
-
-//       likeProducts.push({
-
-//         id: productId,                             
-//         name: productName,
-//         img: prodoctImage,
-
-//         price: productPrice,
-//         count: 1,
-//         // total: productPrice * 1
-
-//       })
-//     }
+    let prodoctImage = this.parentNode.parentNode.previousElementSibling.firstElementChild.firstElementChild.getAttribute("src");
 
 
+
+
+    let productName = this.parentNode.parentNode.parentNode.nextElementSibling.firstElementChild.lastElementChild.innerText;
+
+
+
+    let productPrice = parseInt(this.parentNode.parentNode.parentNode.nextElementSibling.lastElementChild.previousElementSibling.previousElementSibling.innerText);
+
+
+
+    let productId = parseInt(this.parentNode.parentNode.parentNode.parentNode.parentNode.getAttribute("data-id"));
+
+
+
+    let existProduct = likeProducts.find(m => m.id == productId);
+
+    if (existProduct != undefined) {
+
+
+    } else {
+
+      likeProducts.push({
+
+        id: productId,
+        name: productName,
+        img: prodoctImage,
+
+        price: productPrice,
+
+
+      })
+    }
 
 
 
 
 
-   
-//     // getBasketPrice(products);
-//     localStorage.setItem("basket", JSON.stringify(likeProducts));
-    
-//     // itemCountTotal(products);
-//     // getBasketDatas();
-//     // getBasketCount(products);
-    
+
+
+
+    localStorage.setItem("wishtlist", JSON.stringify(likeProducts));
 
 
 
@@ -550,13 +519,71 @@ function getBasketDatas() {
 
 
 
-//   })
 
 
-// });
+  })
+
+
+});
 
 
 
+
+
+
+let eyes = document.querySelectorAll(".eyes");
+
+let modal = document.querySelector(".modal");
+
+eyes.forEach(item => {
+
+  item.addEventListener("click", function (e) {
+
+    e.preventDefault();
+
+    document.getElementById("overlay").style.display = "block";
+
+    modal.classList.remove("d-none");
+
+    modal.children[2].children[0].children[0].innerText = this.parentNode.parentNode.parentNode.nextElementSibling.firstElementChild.lastElementChild.innerText;
+
+    modal.children[2].children[0].children[1].children[0].children[1].innerText = this.parentNode.parentNode.parentNode.nextElementSibling.lastElementChild.previousElementSibling.previousElementSibling.innerText * 2;
+
+    modal.children[2].children[0].children[2].children[1].innerText = this.parentNode.parentNode.parentNode.nextElementSibling.lastElementChild.previousElementSibling.previousElementSibling.innerText;
+
+    let img = this.parentNode.parentNode.previousElementSibling.firstElementChild.firstElementChild.getAttribute("src");
+
+    modal.children[1].children[0].setAttribute('src', img)
+
+  })
+});
+
+
+let overlay = document.getElementById("overlay")
+
+
+overlay.addEventListener("click", function () {
+
+
+  modal.classList.add("d-none");
+
+  overlay.style.display = "none"
+
+
+})
+
+
+
+let close = document.querySelector(".close");
+
+close.addEventListener("click", function () {
+
+  modal.classList.add("d-none");
+
+  document.getElementById("overlay").style.display = "none";
+
+  document.body.style.overflow = "block";
+})
 
 
 
